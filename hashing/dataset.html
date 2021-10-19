@@ -1,0 +1,212 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>dataset</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<link rel="stylesheet" href="../bootstrap.min.css"><!--http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/-->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<link href="../styles.css" rel="stylesheet">
+
+<script>
+// Load this when the DOM is ready
+$(function(){
+  // You used .myCarousel here. 
+  // That's the class selector not the id selector,
+  // which is #myCarousel
+  $('#carousel-example-generic').carousel();
+});
+</script>
+
+</head>
+<body>
+<script xml:space="preserve"> 
+//<![CDATA[
+function togglebib(paperid)
+{
+    var paper = document.getElementById(paperid) ;
+    var bib = paper.getElementsByTagName('pre') ;
+    if (bib.length > 0) {
+        if (bib [0] .style.display == 'none') {
+            bib [0] .style.display = 'block' ;
+        } else {
+            bib [0] .style.display = 'none' ;
+        }
+    }
+}
+</script>
+
+<table align="center" bgcolor="white" border="0" cellpadding="6" cellspacing="18" style="height: 100%" width="960">
+<tbody>
+	<tr>
+      <td valign="top">
+		<table border="0" cellspacing="4" width="960">
+          <tbody>
+            <tr>
+              <td align="center" valign="middle"><h2 style="color: black"><font class="title">Hashing</font></h2></td>
+            </tr>
+          </tbody>
+        </table>
+	</td>
+	</tr>
+  <tr>
+    <td valign="top">
+    <h3>
+      <div id="menu">
+        <p class="menulinks">
+      <a class="menulink" href="http://sites.nlsde.buaa.edu.cn/~xlliu/"><font color="red">Home</font></a> | 
+      <b class="menulink active">General Methods </b>  | 
+      <a class="menulink" href="adhoc.html">Ad-hoc Methods</a> | 
+      <a class="menulink" href="application.html">Applications</a> | 
+      <a class="menulink" href="dataset.html">Data Sets </a>  | 
+      <a class="menulink" href="group.html">Groups</a>
+    </p>
+      </div>
+      </h3>
+	</td>
+</tr>
+	
+		<tr>
+	<td>
+		<br>
+    <h4>
+		<div class="content">
+            <a href="#SIGI"><strong>[SIFT1M]</strong></a>&nbsp;&nbsp;
+            <a href="#SIGI"><strong>[GIST1M]</strong></a>&nbsp;&nbsp;
+            <a href="#CIFAR-10"><strong>[CIFAR-10]</strong></a>&nbsp;&nbsp;
+			<a href="#NUSWIDE"><strong>[NUSWIDE]</strong></a>&nbsp;&nbsp;
+			<a href="#ImageNet"><strong>[ImageNet]</strong></a>&nbsp;&nbsp;
+			<a href="#YouTubeFace"><strong>[YouTubeFace]</strong></a>
+		</div>
+    </h4>
+	</td>
+	</tr>
+	
+<tr>
+<td>
+      
+          <li id="SIGI" style="list-style-type:none">
+            <p class="group"><a href="http://corpus-texmex.irisa.fr/" target="_blank"><strong>SIFT1M</strong></a>[161MB]&nbsp;&nbsp;<a href="http://corpus-texmex.irisa.fr/" target="_blank"><strong>GIST1M</strong></a>[2.6GB]</p>
+        <font class="datainfo"><strong>Source:</strong> &nbsp;Aude Oliva, Antonio Torralba</font>
+        <br><font class="datainfo"><strong>Description:</strong></font>
+        <p class="dataintr">We provides several evaluation sets to evaluate the quality of approximate nearest neighbors search algorithm on different kinds of data and varying database sizes. In particular, we provide a very large set of 1 billion vectors, to our knowledge this is the largest set provided to evaluate ANN methods.</p>
+		<p class="dataintr">Each comprises 3 subsets of vectors:</p>
+		<p class="dataintr" >(1) base vectors: the vectors in which the search is performed</p>
+		<p class="dataintr" >(2) query vectors</p>
+		<p class="dataintr" >(3) learning vectors: to find the parameters involved in a particular method</p>
+		<p class="dataintr">In addition, we provide the groundtruth for each set, in the form of the 
+		pre-computed k nearest neighbors and their square Euclidean distance.</p>
+
+		<p class="dataintr">We use three different file formats:</p>
+		<p class="dataintr" >(1) The vector files are stored in .bvecs or .fvecs format.</p>
+		<p class="dataintr" >(2) The groundtruth file in is .ivecs format. </p>
+  <div style="padding-left: 80px">
+	<table border="1" cellpadding="8">
+    <tr>
+      <th>Vector set</th>
+      <td>dimension</td>
+      <td>nb base vectors</td>
+      <td>nb query vectors</td>
+      <td>nb learn vectors</td>
+      <td>file format</td>
+    </tr>
+    <tr>
+      <th>SIFT1M</th>
+      <td>128</td>
+      <td>1,000,000</td>
+      <td>10,000</td>
+      <td>100,000</td>
+      <td>fvecs</td>
+    </tr>
+   <tr>
+      <th>GIST1M</th>
+      <td>960</td>
+      <td>1,000,000</td>
+      <td>1,000</td>
+      <td>500,000</td>
+      <td>fvecs</td>
+    </tr>
+  </table>
+	  </div>
+          </li>
+      
+      
+         
+          <li id="CIFAR-10" style="list-style-type:none">
+            <p class="group"><a href="http://www.cs.toronto.edu/~kriz/cifar.html" target="_blank"><strong>CIFAR-10</strong></a>[160MB]</p>
+    	
+		<font class="datainfo"><strong>Source:</strong> &nbsp;Alex Krizhevsky, Vinod Nair, and Geoffrey Hinton. 2009</font>
+        
+        <br><font class="datainfo"><strong>Description:</strong></font>
+       <p class="dataintr">The CIFAR-10 dataset consists of 60000 32x32 colour images in 10 classes, with 6000 images per class. There are 50000 training images and 10000 test images.</p>
+	  <p class="dataintr">The dataset is divided into five training batches and one test batch, each with 10000 images. The test batch contains exactly 1000 randomly-selected images from each class. The training batches contain the remaining images in random order, but some training batches may contain more images from one class than another. Between them, the training batches contain exactly 5000 images from each class. Here are the classes in the dataset:airplane?automobile、bird、cat、deer、dog、frog、horse、ship、truck.</p>
+	  <p class="dataintr">The classes are completely mutually exclusive. There is no overlap between automobiles and trucks. "Automobile" includes sedans, SUVs, things of that sort. "Truck" includes only big trucks. Neither includes pickup trucks.</p>
+          </li>
+	
+	
+        <li id="NUSWIDE" style="list-style-type:none">
+        <p class="group"><a href="http://lms.comp.nus.edu.sg/research/NUS-WIDE.htm" target="_blank"><strong>NUSWIDE</strong></a>[1.2GB]</p>
+      <font class="datainfo"><strong>Source:</strong> &nbsp;Lab for Media Search in National University of Singapore. 2009</font>
+      <br><font class="datainfo"><strong>Description:</strong></font>
+      
+  <p class="dataintr">A Real-World Web Image Dataset from National University of Singapore.Here we Description a web image dataset created by Lab for Media Search in National University of Singapore. The dataset includes:</p>
+	<p class="dataintr">(1) 269,648 images and the associated tags from Flickr, with a total number of 5,018 unique tags;</p>
+	<p class="dataintr">(2) six types of low-level features extracted from these images, including 64-D color histogram, 144-D color correlogram, 73-D edge direction histogram, 128-D wavelet texture, 225-D block-wise color moments and 500-D bag of words based on SIFT descriptions;</p>
+	<p class="dataintr">(3) ground-truth for 81 concepts that can be used for evaluation. </p>
+	<p class="dataintr">Based on this dataset, we identify several research issues on web image annotation and retrieval. We also provide the baseline results for web image annotation by learning from the tags using the traditional k-NN algorithm. The benchmark results show that it is possible to learn models from these data to help general image retrieval.</p>
+         </li>
+	
+          <li id="ImageNet" style="list-style-type:none">  
+        <p class="group"><a href="http://www.image-net.org/about-stats" target="_blank"><strong>ImageNet</strong></a>[1TB]</p>
+        <font class="datainfo"><strong>Source:</strong> &nbsp;The ImageNet Large Scale Visual Recognition Challenge. 2017</font>
+        <br><font class="datainfo"><strong>Description:</strong></font>
+        
+        <p class="dataintr">ImageNet is an image database organized according to the WordNet hierarchy (currently only the nouns), in which each node of the hierarchy is depicted by hundreds and thousands of images. Currently we have an average of over five hundred images per node. We hope ImageNet will become a useful resource for researchers, educators, students and all of you who share our passion for pictures. 
+Click here to learn more about ImageNet, Click here to join the ImageNet mailing list.</p>
+          </li>
+      
+          <li id="YouTubeFace" style="list-style-type:none">
+            <p class="group"><a href="http://www.cs.tau.ac.il/~wolf/ytfaces/results.html" target="_blank"><strong>YouTubeFace</strong></a></p>
+        <font class="datainfo"><strong>Source:</strong> &nbsp;the Singapore-based research center of the University of Illinois at Urbana-Champaign (UIUC). 2014</font>
+        <br><font class="datainfo"><strong>Description:</strong></font><br>
+        
+        <p class="dataintr">The data set contains 3,425 videos of 1,595 different people. All the videos were downloaded from YouTube. An average of 2.15 videos are available for each subject. The shortest clip duration is 48 frames, the longest clip is 6,070 frames, and the average length of a video clip is 181.3 frames. </p>
+ <div style="padding-left: 80px">
+  <table border="1" cellpadding="8">
+    <caption>Number of videos per person</caption>
+    <tr>
+      <th>videos</th>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>people</th>
+      <td>591</td>
+      <td>471</td>
+      <td>307</td>
+      <td>167</td>
+      <td>51</td>
+      <td>8</td>
+    </tr>
+  </table>
+	</div>
+
+
+<p class="dataintr">In designing our video data set and benchmarks we follow the example of the 'Labeled Faces in the Wild' LFW image collection. Specifically, our goal is to produce a large scale collection of videos along with labels indicating the identities of a person appearing in each video. 
+In addition, we publish benchmark tests, intended to measure the performance of video pair-matching techniques on these videos. 
+Finally, we provide descriptor encodings for the faces appearing in these videos, using well established descriptor methods. </p>
+        
+          </li>
+</td>
+</tr>
+</tbody>
+</table>
+
+</body>
+</html>

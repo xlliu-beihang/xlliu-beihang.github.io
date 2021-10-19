@@ -1,0 +1,1020 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Applications</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<link rel="stylesheet" href="../bootstrap.min.css"><!--http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/-->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<link href="../styles.css" rel="stylesheet">
+<script>
+// Load this when the DOM is ready
+$(function(){
+  // You used .myCarousel here. 
+  // That's the class selector not the id selector,
+  // which is #myCarousel
+  $('#carousel-example-generic').carousel();
+});
+</script>
+
+</head>
+<body>
+<script xml:space="preserve"> 
+//<![CDATA[
+function togglebib(paperid)
+{
+    var paper = document.getElementById(paperid) ;
+    var bib = paper.getElementsByTagName('pre') ;
+    if (bib.length > 0) {
+        if (bib [0] .style.display == 'none') {
+            bib [0] .style.display = 'block' ;
+        } else {
+            bib [0] .style.display = 'none' ;
+        }
+    }
+}
+//]]>
+</script>
+<table align="center" bgcolor="white" border="0" cellpadding="6" cellspacing="18" style="height: 100%" width="960">
+<tbody>
+
+	<tr>
+      <td valign="top">
+		  <table border="0" cellspacing="4" width="960">
+          <tbody>
+            <tr>
+              <td align="center" valign="middle"><h2 style="color: black"><font class="title">Hashing</font></h2></td>
+            </tr>
+          </tbody>
+        </table>
+		  </td>
+		</tr>
+	
+	
+  <tr>
+    <td valign="top">
+<h3>
+      <div id="menu">
+        <p class="menulinks">
+      <a class="menulink" href="http://sites.nlsde.buaa.edu.cn/~xlliu/"><font color="red">Home</font></a> | 
+      <b class="menulink active">General Methods </b>  | 
+      <a class="menulink" href="adhoc.html">Ad-hoc Methods</a> | 
+      <a class="menulink" href="application.html">Applications</a> | 
+      <a class="menulink" href="dataset.html">Data Sets </a>  | 
+      <a class="menulink" href="group.html">Groups</a>
+    </p>
+      </div>
+      </h3>
+	</td>
+</tr>
+	
+	<tr>
+	<td>
+		<br>
+    <h4>
+		<div class="content">
+            <a href="#Retrieval"><strong>[Retrieval]</strong></a>&nbsp;&nbsp;
+            <a href="#Machine Learning"><strong>[Machine Learning]</strong></a>
+		</div>
+    </h4>
+	</td>
+	</tr>
+<tr>
+<td>
+        <a name="Retrieval"><font class="cata">Large-Scale Retrieval</font></a>
+        <div class="pub">
+          <ul>
+
+            <li style="margin: 10px" id="hu2018hashing">Mengqiu Hu, Yang Yang, Fumin Shen, Ning Xie, Heng Tao Shen.&nbsp; <strong>Hashing with angular reconstructive embeddings.&nbsp;</strong> IEEE Transactions on Image Processing, 2018 <a href="http://ieeexplore.ieee.org/abstract/document/8025599/" target="_blank"><font class="paperlink">[paper]</font></a> <a class="togglebib" href="javascript:togglebib('hu2018hashing')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+              <pre class="bib" style="display: none" xml:space="preserve">
+@article{hu2018hashing,
+  title={Hashing with angular reconstructive embeddings},
+  author={Hu, Mengqiu and Yang, Yang and Shen, Fumin and Xie, Ning and Shen, Heng Tao},
+  journal={IEEE Transactions on Image Processing},
+  volume={27},
+  number={2},
+  pages={545--555},
+  year={2018},
+  publisher={IEEE}
+}
+</pre>
+            </li>
+
+            <li style="margin: 10px" id="song2018quantization">Jingkuan Song, Lianli Gao, Li Liu, Xiaofeng Zhu, Nicu Sebe.&nbsp; <strong>Quantization-based hashing: a general framework for scalable image and video retrieval.&nbsp;</strong> Pattern Recognition, 2018 <a href="https://ac.els-cdn.com/S0031320317301322/1-s2.0-S0031320317301322-main.pdf?_tid=spdf-3c87b700-5574-4b5c-864b-e98e7052ca53&acdnat=1519655562_114d4b8d33be100e32b33928aade6988" target="_blank"><font class="paperlink">[paper]</font></a> <a class="togglebib" href="javascript:togglebib('song2018quantization')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+              <pre class="bib" style="display: none" xml:space="preserve">
+@article{song2018quantization,
+  title={Quantization-based hashing: a general framework for scalable image and video retrieval},
+  author={Song, Jingkuan and Gao, Lianli and Liu, Li and Zhu, Xiaofeng and Sebe, Nicu},
+  journal={Pattern Recognition},
+  volume={75},
+  pages={175--187},
+  year={2018},
+  publisher={Elsevier}
+}
+</pre>
+            </li>
+
+            <li style="margin: 10px" id="song2018self">Jingkuan Song, Hanwang Zhang, Xiangpeng Li, Lianli Gao, Meng Wang, Richang Hong.&nbsp; <strong>Self-Supervised Video Hashing with Hierarchical Binary Auto-encoder.&nbsp;</strong> ARXIV, 2018 <a href="https://arxiv.org/pdf/1802.02305.pdf" target="_blank"><font class="paperlink">[paper]</font></a> <a class="togglebib" href="javascript:togglebib('song2018self')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+              <pre class="bib" style="display: none" xml:space="preserve">
+@article{song2018self,
+  title={Self-Supervised Video Hashing with Hierarchical Binary Auto-encoder},
+  author={Song, Jingkuan and Zhang, Hanwang and Li, Xiangpeng and Gao, Lianli and Wang, Meng and Hong, Richang},
+  journal={arXiv preprint arXiv:1802.02305},
+  year={2018}
+}
+</pre>
+            </li>
+
+
+      <li style="margin: 10px" id="wu2017unsupervised">Gengshen Wu, Li Liu, Yuchen Guo, Guiguang Ding, Jungong Han, Jialie Shen, Ling Shao.&nbsp; <strong>Unsupervised deep video hashing with balanced rotation.&nbsp;</strong> International Joint Conferences on Artificial Intelligence, 2017 <a href="http://www.ijcai.org/proceedings/2017/0429.pdf" target="_blank"><font class="paperlink">[paper]</font></a> <a class="togglebib" href="javascript:togglebib('wu2017unsupervised')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+                    <pre class="bib" style="display: none" xml:space="preserve">
+@inproceedings{wu2017unsupervised,
+  title={Unsupervised deep video hashing with balanced rotation},
+  author={Wu, Gengshen and Liu, Li and Guo, Yuchen and Ding, Guiguang and Han, Jungong and Shen, Jialie and Shao, Ling},
+  year={2017},
+  organization={IJCAI}
+}
+</pre>
+
+            <li style="margin: 10px" id="song2017binary">Jingkuan Song
+              .&nbsp; <strong>Binary Generative Adversarial Networks for Image Retrieval.&nbsp;</strong> ARXIV, 2017 <a href="http://xueshu.baidu.com/s?wd=paperuri%3A%2857e2d1d3acf061aa956290987f4c9c2f%29&filter=sc_long_sign&tn=SE_xueshusource_2kduw22v&sc_vurl=http%3A%2F%2Farxiv.org%2Fabs%2F1708.04150&ie=utf-8&sc_us=15267525572303723242" target="_blank"><font class="paperlink">[paper]</font></a> <a class="togglebib" href="javascript:togglebib('song2017binary')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+              <pre class="bib" style="display: none" xml:space="preserve">
+@article{song2017binary,
+  title={Binary Generative Adversarial Networks for Image Retrieval},
+  author={Song, Jingkuan},
+  journal={arXiv preprint arXiv:1708.04150},
+  year={2017}
+}
+</pre>
+            </li>
+            <li style="margin: 10px" id="shen2017semi">Xiaobo Shen, Fumin Shen, Quan-Sen Sun, Yang Yang, Yun-Hao Yuan, Heng Tao Shen.&nbsp; <strong>Semi-paired discrete hashing: Learning latent hash codes for semi-paired cross-view retrieval.&nbsp;</strong> IEEE transactions on cybernetics, 2017 <a href="http://bmc.uestc.edu.cn/~fshen/TCYB2016.pdf" target="_blank"><font class="paperlink">[paper]</font></a> <a class="togglebib" href="javascript:togglebib('shen2017semi')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+              <pre class="bib" style="display: none" xml:space="preserve">
+@article{shen2017semi,
+  title={Semi-paired discrete hashing: Learning latent hash codes for semi-paired cross-view retrieval},
+  author={Shen, Xiaobo and Shen, Fumin and Sun, Quan-Sen and Yang, Yang and Yuan, Yun-Hao and Shen, Heng Tao},
+  journal={IEEE transactions on cybernetics},
+  volume={47},
+  number={12},
+  pages={4275--4288},
+  year={2017},
+  publisher={IEEE}
+}
+</pre>
+            </li>
+
+            <li style="margin: 10px" id="liong2017learning">Venice Erin Liong, Jiwen Lu, Yap-Peng Tan.&nbsp; <strong>Learning a Cross-Modal Hashing Network for Multimedia Search.&nbsp;</strong> IEEE International Conference on Image Processing, 2017 <a href="http://sigport.org/documents/learning-cross-modal-hashing-network-multimedia-search-1" target="_blank"><font class="paperlink">[paper]</font></a> <a class="togglebib" href="javascript:togglebib('liong2017learning')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+              <pre class="bib" style="display: none" xml:space="preserve">
+@article{liong2017learning,
+  title={Learning a Cross-Modal Hashing Network for Multimedia Search},
+  author={Liong, Venice Erin and Lu, Jiwen and Tan, Yap-Peng},
+  year={2017}
+}
+</pre>
+            </li>
+
+            <li style="margin: 10px" id="xia2017temporal">Ke Xia, Yuqing Ma, Xianglong Liu, Yadong Mu, Li Liu.&nbsp; <strong>Temporal Binary Coding for Large-Scale Video Search.&nbsp;</strong> ACM MM(Proceedings of the 2017 ACM on Multimedia Conference), 2017 <a href="http://delivery.acm.org/10.1145/3130000/3123273/p333-xia.pdf?ip=219.239.227.202&id=3123273&acc=ACTIVE%20SERVICE&key=BF85BBA5741FDC6E%2E478E8F2EC4A762F8%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&__acm__=1520594422_bf48bcf94de336dedae8755dc10acc9b" target="_blank"><font class="paperlink">[paper]</font></a> <a class="togglebib" href="javascript:togglebib('xia2017temporal')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+              <pre class="bib" style="display: none" xml:space="preserve">
+@inproceedings{xia2017temporal,
+  title={Temporal Binary Coding for Large-Scale Video Search},
+  author={Xia, Ke and Ma, Yuqing and Liu, Xianglong and Mu, Yadong and Liu, Li},
+  booktitle={Proceedings of the 2017 ACM on Multimedia Conference},
+  pages={333--341},
+  year={2017},
+  organization={ACM}
+}
+</pre>
+            </li>
+
+            <li style="margin: 10px" id="lang2017fast">Bo Lang, Bo Wu, Yang Liu, Xianglong Liu, Boyu Zhang.&nbsp; <strong>Fast graph similarity search via hashing and its application on image retrieval.&nbsp;</strong> Multimedia Tools and Applications, 2017 <a href="https://link.springer.com/content/pdf/10.1007%2Fs11042-017-5194-8.pdf" target="_blank"><font class="paperlink">[paper]</font></a> <a class="togglebib" href="javascript:togglebib('lang2017fast')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+              <pre class="bib" style="display: none" xml:space="preserve">
+@article{lang2017fast,
+  title={Fast graph similarity search via hashing and its application on image retrieval},
+  author={Lang, Bo and Wu, Bo and Liu, Yang and Liu, Xianglong and Zhang, Boyu},
+  journal={Multimedia Tools and Applications},
+  pages={1--22},
+  year={2017},
+  publisher={Springer}
+}
+</pre>
+            </li>
+
+            <li style="margin: 10px" id="liu2017deep">Li Liu, Fumin Shen, Yuming Shen, Xianglong Liu, Ling Shao.&nbsp; <strong>Deep sketch hashing: Fast free-hand sketch-based image retrieval.&nbsp;</strong> Proc. IEEE Conference on Computer Vision and Pattern Recognition, 2017 <a href="http://sites.nlsde.buaa.edu.cn/~xlliu/cvpr2017.pdf" target="_blank"><font class="paperlink">[paper]</font></a> <a href="https://github.com/ymcidence/DeepSketchHashing.zip" target="_blank"><font class="paperlink">[code]</font></a> <a class="togglebib" href="javascript:togglebib('liu2017deep')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+              <pre class="bib" style="display: none" xml:space="preserve">
+@inproceedings{liu2017deep,
+  title={Deep sketch hashing: Fast free-hand sketch-based image retrieval},
+  author={Liu, Li and Shen, Fumin and Shen, Yuming and Liu, Xianglong and Shao, Ling},
+  booktitle={Proc. CVPR},
+  pages={2862--2871},
+  year={2017}
+}
+</pre>
+            </li>
+
+            <li style="margin: 10px" id="song2017deep">Jingkuan Song, Tao He, Lianli Gao, Xing Xu, Heng Tao Shen.&nbsp; <strong>Deep region hashing for efficient large-scale instance search from images.&nbsp;</strong> ARXIV, 2017 <a href="https://arxiv.org/pdf/1701.07901.pdf" target="_blank"><font class="paperlink">[paper]</font></a> <a class="togglebib" href="javascript:togglebib('song2017deep')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+              <pre class="bib" style="display: none" xml:space="preserve">
+@article{song2017deep,
+  title={Deep region hashing for efficient large-scale instance search from images},
+  author={Song, Jingkuan and He, Tao and Gao, Lianli and Xu, Xing and Shen, Heng Tao},
+  journal={arXiv preprint arXiv:1701.07901},
+  year={2017}
+}
+</pre>
+            </li>
+
+            <li style="margin: 10px" id="zhu2017exploring">Lei Zhu, Zi Huang, Xiaojun Chang, Jingkuan Song, Heng Tao Shen.&nbsp; <strong>Exploring Consistent Preferences: Discrete Hashing with Pair-Exemplar for Scalable Landmark Search.&nbsp;</strong> MM(Proceedings of the 2017 ACM on Multimedia Conference), 2017 <a href="http://delivery.acm.org/10.1145/3130000/3123301/p726-zhu.pdf?ip=219.239.227.202&id=3123301&acc=ACTIVE%20SERVICE&key=BF85BBA5741FDC6E%2E478E8F2EC4A762F8%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&__acm__=1520592680_a95d4693eef93044887b744843e25cd4" target="_blank"><font class="paperlink">[paper]</font></a> <a class="togglebib" href="javascript:togglebib('zhu2017exploring')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+              <pre class="bib" style="display: none" xml:space="preserve">
+@inproceedings{zhu2017exploring,
+  title={Exploring Consistent Preferences: Discrete Hashing with Pair-Exemplar for Scalable Landmark Search},
+  author={Zhu, Lei and Huang, Zi and Chang, Xiaojun and Song, Jingkuan and Shen, Heng Tao},
+  booktitle={Proceedings of the 2017 ACM on Multimedia Conference},
+  pages={726--734},
+  year={2017},
+  organization={ACM}
+}
+</pre>
+            </li>
+
+            <li style="margin: 10px" id="liu2017hash">Xianglong Liu, Junfeng He, Shih-Fu Chang.&nbsp; <strong>Hash bit selection for nearest neighbor search.&nbsp;</strong> IEEE Transactions on Image Processing, 2017 <a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7904662" target="_blank"><font class="paperlink">[paper]</font></a> <a class="togglebib" href="javascript:togglebib('liu2017hash')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+              <pre class="bib" style="display: none" xml:space="preserve">
+@article{liu2017hash,
+  title={Hash bit selection for nearest neighbor search},
+  author={Liu, Xianglong and He, Junfeng and Chang, Shih-Fu},
+  journal={IEEE Transactions on Image Processing},
+  volume={26},
+  number={11},
+  pages={5367--5380},
+  year={2017},
+  publisher={IEEE}
+}
+</pre>
+            </li>
+
+            <li style="margin: 10px" id="andoni2017optimal">Alexandr Andoni, Thijs Laarhoven, Ilya Razenshteyn, Erik Waingarten.&nbsp; <strong>Optimal hashing-based time-space trade-offs for approximate near neighbors.&nbsp;</strong> ACM-SIAM Symposium on Discrete Algorithms, 2017 <a href="http://delivery.acm.org/10.1145/3040000/3039690/p47-andoni.pdf?ip=219.239.227.202&id=3039690&acc=ACTIVE%20SERVICE&key=BF85BBA5741FDC6E%2E478E8F2EC4A762F8%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&__acm__=1520517759_d098adee984c3c736bb38d1696547612" target="_blank"><font class="paperlink">[paper]</font></a> <a class="togglebib" href="javascript:togglebib('andoni2017optimal')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+              <pre class="bib" style="display: none" xml:space="preserve">
+@inproceedings{andoni2017optimal,
+  title={Optimal hashing-based time-space trade-offs for approximate near neighbors},
+  author={Andoni, Alexandr and Laarhoven, Thijs and Razenshteyn, Ilya and Waingarten, Erik},
+  booktitle={Proceedings of the Twenty-Eighth Annual ACM-SIAM Symposium on Discrete Algorithms},
+  pages={47--66},
+  year={2017},
+  organization={Society for Industrial and Applied Mathematics}
+}
+</pre>
+            </li>
+
+            <li style="margin: 10px" id="xu2017efficient">Ruicong Xu, Yang Yang, Fumin Shen, Ning Xie, Heng Tao Shen.&nbsp; <strong>Efficient Binary Coding for Subspace-based Query-by-Image Video Retrieval.&nbsp;</strong> MM(Proceedings of the 2017 ACM on Multimedia Conference), 2017 <a href="http://delivery.acm.org/10.1145/3130000/3123392/p1354-xu.pdf?ip=219.239.227.202&id=3123392&acc=ACTIVE%20SERVICE&key=BF85BBA5741FDC6E%2E478E8F2EC4A762F8%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&__acm__=1520592615_f42137d034c9807919c195a59365f1ad" target="_blank"><font class="paperlink">[paper]</font></a> <a class="togglebib" href="javascript:togglebib('xu2017efficient')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+              <pre class="bib" style="display: none" xml:space="preserve">
+@inproceedings{xu2017efficient,
+  title={Efficient Binary Coding for Subspace-based Query-by-Image Video Retrieval},
+  author={Xu, Ruicong and Yang, Yang and Shen, Fumin and Xie, Ning and Shen, Heng Tao},
+  booktitle={Proceedings of the 2017 ACM on Multimedia Conference},
+  pages={1354--1362},
+  year={2017},
+  organization={ACM}
+}
+</pre>
+            </li>
+
+            <li style="margin: 10px" id="liu2017boosting">Xianglong Liu, Cheng Deng, Yadong Mu, Zhujin Li.&nbsp; <strong>Boosting Complementary Hash Tables for Fast Nearest Neighbor Search.&nbsp;</strong> AAAI Conference on Artificial Intelligence, 2017 <a href="http://sites.nlsde.buaa.edu.cn/~xlliu/aaai2017.pdf" target="_blank"><font class="paperlink">[paper]</font></a> <a class="togglebib" href="javascript:togglebib('liu2017boosting')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+              <pre class="bib" style="display: none" xml:space="preserve">
+@inproceedings{liu2017boosting,
+  title={Boosting Complementary Hash Tables for Fast Nearest Neighbor Search.},
+  author={Liu, Xianglong and Deng, Cheng and Mu, Yadong and Li, Zhujin},
+  booktitle={AAAI},
+  pages={4183--4189},
+  year={2017}
+}
+</pre>
+            </li>
+
+            <li style="margin: 10px" id="cao2017multiple">Liangfu Cao, Lianli Gao, Jingkuan Song, Fumin Shen, Yuan Wang.&nbsp; <strong>Multiple hierarchical deep hashing for large scale image retrieval.&nbsp;</strong> Multimedia Tools and Applications, 2017 <a href="https://link.springer.com/content/pdf/10.1007%2Fs11042-017-4489-0.pdf" target="_blank"><font class="paperlink">[paper]</font></a> <a class="togglebib" href="javascript:togglebib('cao2017multiple')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+              <pre class="bib" style="display: none" xml:space="preserve">
+@article{cao2017multiple,
+  title={Multiple hierarchical deep hashing for large scale image retrieval},
+  author={Cao, Liangfu and Gao, Lianli and Song, Jingkuan and Shen, Fumin and Wang, Yuan},
+  journal={Multimedia Tools and Applications},
+  pages={1--14},
+  year={2017},
+  publisher={Springer}
+}
+</pre>
+            </li>
+
+            <li style="margin: 10px" id="chen2017supervised">Sixiu Chen, Fumin Shen, Yang Yang, Xing Xu, Jingkuan Song.&nbsp; <strong>Supervised hashing with adaptive discrete optimization for multimedia retrieval.&nbsp;</strong> Neurocomputing, 2017 <a href="https://ac.els-cdn.com/S0925231217304526/1-s2.0-S0925231217304526-main.pdf?_tid=a9b3c936-1b02-11e8-a488-00000aacb361&acdnat=1519656069_65c4271947896e4e0f127f59e99b6da8" target="_blank"><font class="paperlink">[paper]</font></a> <a class="togglebib" href="javascript:togglebib('chen2017supervised')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+              <pre class="bib" style="display: none" xml:space="preserve">
+@article{chen2017supervised,
+  title={Supervised hashing with adaptive discrete optimization for multimedia retrieval},
+  author={Chen, Sixiu and Shen, Fumin and Yang, Yang and Xu, Xing and Song, Jingkuan},
+  journal={Neurocomputing},
+  volume={253},
+  pages={97--103},
+  year={2017},
+  publisher={Elsevier}
+}
+</pre>
+            </li>
+
+             <li style="margin: 10px" id="gong2015web">Yunchao Gong, Marcin Pawlowski, Fei Yang, Louis Brandy, Lubomir Bourdev, Rob Fergus.&nbsp; <strong>Web scale photo hash clustering on a single machine.&nbsp;</strong> IEEE Conference on Computer Vision and Pattern Recognition, 2015 <a href="https://www.cv-foundation.org/openaccess/content_cvpr_2015/app/1A_003.pdf" target="_blank"><font class="paperlink">[paper]</font></a> <a class="togglebib" href="javascript:togglebib('gong2015web')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+                    <pre class="bib" style="display: none" xml:space="preserve">
+@inproceedings{gong2015web,
+  title={Web scale photo hash clustering on a single machine},
+  author={Gong, Yunchao and Pawlowski, Marcin and Yang, Fei and Brandy, Louis and Bourdev, Lubomir and Fergus, Rob},
+  booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
+  pages={19--27},
+  year={2015}
+}
+</pre>
+                  </li>
+
+            <li style="margin: 10px" id="shen2016robust">Xiaobo Shen, Fumin Shen, Quan-Sen Sun, Yun-Hao Yuan, Heng Tao Shen.&nbsp; <strong>Robust cross-view hashing for multimedia retrieval.&nbsp;</strong> IEEE Signal Processing Letters, 2015 <a href="http://ieeexplore.ieee.org/abstract/document/7378887/" target="_blank"><font class="paperlink">[paper]</font></a> <a class="togglebib" href="javascript:togglebib('shen2016robust')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+              <pre class="bib" style="display: none" xml:space="preserve">
+@article{shen2016robust,
+  title={Robust cross-view hashing for multimedia retrieval},
+  author={Shen, Xiaobo and Shen, Fumin and Sun, Quan-Sen and Yuan, Yun-Hao and Shen, Heng Tao},
+  journal={IEEE Signal Processing Letters},
+  volume={23},
+  number={6},
+  pages={893--897},
+  year={2016},
+  publisher={IEEE}
+}
+</pre>
+            </li>
+
+            <li style="margin: 10px" id="liu2016multimedia">Wei Liu, Tongtao Zhang.&nbsp; <strong>Multimedia hashing and networking.&nbsp;</strong> IEEE MultiMedia, 2016 <a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7535082" target="_blank"><font class="paperlink">[paper]</font></a> <a class="togglebib" href="javascript:togglebib('liu2016multimedia')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+              <pre class="bib" style="display: none" xml:space="preserve">
+@article{liu2016multimedia,
+  title={Multimedia hashing and networking},
+  author={Liu, Wei and Zhang, Tongtao},
+  journal={IEEE MultiMedia},
+  volume={23},
+  number={3},
+  pages={75--79},
+  year={2016},
+  publisher={IEEE}
+}
+</pre>
+            </li>
+
+            <li style="margin: 10px" id="wang2016learning">Jun Wang, Wei Liu, Sanjiv Kumar, Shih-Fu Chang.&nbsp; <strong>Learning to Hash for Indexing Big Data - A Survey.&nbsp;</strong> arXiv, 2015 <a href="https://arxiv.org/pdf/1509.05472.pdf" target="_blank"><font class="paperlink">[paper]</font></a> <a class="togglebib" href="javascript:togglebib('wang2016learning')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+              <pre class="bib" style="display: none" xml:space="preserve">
+@article{wang2016learning,
+  title={Learning to hash for indexing big data��a survey},
+  author={Wang, Jun and Liu, Wei and Kumar, Sanjiv and Chang, Shih-Fu},
+  journal={Proceedings of the IEEE},
+  volume={104},
+  number={1},
+  pages={34--57},
+  year={2016},
+  publisher={IEEE}
+}
+</pre>
+            </li>
+
+            <li style="margin: 10px" id="ellis2016placing">Joseph G Ellis, Svebor Karaman, Hongzhi Li, Hong Bin Shim, Shih-Fu Chang.&nbsp; <strong>Placing Broadcast News Videos in their Social Media Context using Hashtags.&nbsp;</strong> ACM Multimedia, 2016 <a href="http://delivery.acm.org/10.1145/2980000/2970929/p684-ellis.pdf?ip=219.239.227.202&id=2970929&acc=CHORUS&key=BF85BBA5741FDC6E%2E478E8F2EC4A762F8%2E4D4702B0C3E38B35%2E6D218144511F3437&__acm__=1520520913_2a0d2d1df66dc53d109f43f6c348d2cd" target="_blank"><font class="paperlink">[paper]</font></a> <a class="togglebib" href="javascript:togglebib('ellis2016placing')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+              <pre class="bib" style="display: none" xml:space="preserve">
+@inproceedings{ellis2016placing,
+  title={Placing Broadcast News Videos in their Social Media Context using Hashtags},
+  author={Ellis, Joseph G and Karaman, Svebor and Li, Hongzhi and Shim, Hong Bin and Chang, Shih-Fu},
+  booktitle={Proceedings of the 2016 ACM on Multimedia Conference},
+  pages={684--688},
+  year={2016},
+  organization={ACM}
+}
+</pre>
+            </li>
+
+            <li style="margin: 10px" id="andoni2016approximate">Alexandr Andoni, Huy L Nguyen, Aleksandar Nikolov, Ilya Razenshteyn, Erik Waingarten.&nbsp; <strong>Approximate near neighbors for general symmetric norms.&nbsp;</strong> arXiv, 2016 <a href="https://arxiv.org/pdf/1611.06222.pdf" target="_blank"><font class="paperlink">[paper]</font></a> <a class="togglebib" href="javascript:togglebib('andoni2016approximate')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+              <pre class="bib" style="display: none" xml:space="preserve">
+@article{andoni2016approximate,
+  title={Approximate near neighbors for general symmetric norms},
+  author={Andoni, Alexandr and Nguyen, Huy L and Nikolov, Aleksandar and Razenshteyn, Ilya and Waingarten, Erik},
+  journal={arXiv preprint arXiv:1611.06222},
+  year={2016}
+}
+</pre>
+            </li>
+
+            <li style="margin: 10px" id="indyk2016simultaneous">Piotr Indyk, Robert Kleinberg, Sepideh Mahabadi, Yang Yuan.&nbsp; <strong>Simultaneous Nearest Neighbor Search.&nbsp;</strong> arXiv, 2016 <a href="https://arxiv.org/pdf/1604.02188.pdf" target="_blank"><font class="paperlink">[paper]</font></a> <a class="togglebib" href="javascript:togglebib('indyk2016simultaneous')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+              <pre class="bib" style="display: none" xml:space="preserve">
+@article{indyk2016simultaneous,
+  title={Simultaneous nearest neighbor search},
+  author={Indyk, Piotr and Kleinberg, Robert and Mahabadi, Sepideh and Yuan, Yang},
+  journal={arXiv preprint arXiv:1604.02188},
+  year={2016}
+}
+</pre>
+            </li>
+
+            <li style="margin: 10px" id="liu2016deep">Haomiao Liu, Ruiping Wang, Shiguang Shan, Xilin Chen.&nbsp; <strong>Deep supervised hashing for fast image retrieval.&nbsp;</strong> IEEE Conference on Computer Vision and Pattern Recognition, 2016 <a href="http://pdfs.semanticscholar.org/bd2f/abb3a546ee0554089d9c39cb9f7f6648c159.pdf" target="_blank"><font class="paperlink">[paper]</font></a> <a class="togglebib" href="javascript:togglebib('liu2016deep')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+              <pre class="bib" style="display: none" xml:space="preserve">
+@inproceedings{liu2016deep,
+  title={Deep supervised hashing for fast image retrieval},
+  author={Liu, Haomiao and Wang, Ruiping and Shan, Shiguang and Chen, Xilin},
+  booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+  pages={2064--2072},
+  year={2016}
+}
+</pre>
+            </li>
+
+            <li style="margin: 10px" id="shen2015hashing">Fumin Shen, Chunhua Shen, Qinfeng Shi, Anton van den Hengel, Zhenmin Tang, Heng Tao Shen.&nbsp; <strong>Hashing on Nonlinear Manifolds.&nbsp;</strong> IEEE Trans. Image Processing, 2015 <a href="https://arxiv.org/pdf/1412.0826" target="_blank"><font class="paperlink">[paper]</font></a> <a class="togglebib" href="javascript:togglebib('shen2015hashing')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+              <pre class="bib" style="display: none" xml:space="preserve">
+@article{shen2015hashing,
+  title={Hashing on nonlinear manifolds},
+  author={Shen, Fumin and Shen, Chunhua and Shi, Qinfeng and van den Hengel, Anton and Tang, Zhenmin and Shen, Heng Tao},
+  journal={IEEE Transactions on Image Processing},
+  volume={24},
+  number={6},
+  pages={1839--1851},
+  year={2015},
+  publisher={IEEE}
+}
+</pre>
+            </li>
+            <li style="margin: 10px" id="zhou2015deep">Ke Zhou, Yu Liu, Jinkuan Song, Linyu Yan, Fuhao Zou, Fumin Shen.&nbsp; <strong>Deep Self-taught Hashing for Image Retrieval.&nbsp;</strong> TOC(Transactions on Cybernetics), 2015 <a href="http://or.nsfc.gov.cn/bitstream/00001903-5/157648/1/1000013938576.pdf" target="_blank"><font class="paperlink">[paper]</font></a> <a class="togglebib" href="javascript:togglebib('zhou2015deep')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+              <pre class="bib" style="display: none" xml:space="preserve">
+@inproceedings{zhou2015deep,
+  title={Deep self-taught hashing for image retrieval},
+  author={Zhou, Ke and Liu, Yu and Song, Jingkuan and Yan, Linyu and Zou, Fuhao and Shen, Fumin},
+  booktitle={Proceedings of the 23rd ACM international conference on Multimedia},
+  pages={1215--1218},
+  year={2015},
+  organization={ACM}
+}
+</pre>
+            </li>
+
+            <li style="margin: 10px" id="gao2015scalable">Lianli Gao, Jingkuan Song, Fuhao Zou, Dongxiang Zhang, Jie Shao.&nbsp; <strong>Scalable multimedia retrieval by deep learning hashing with relative similarity learning.&nbsp;</strong> ACM international Conference on Multimedia, 2015 <a href="http://delivery.acm.org/10.1145/2810000/2806360/p903-gao.pdf?ip=219.239.227.202&id=2806360&acc=ACTIVE%20SERVICE&key=BF85BBA5741FDC6E%2E478E8F2EC4A762F8%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&__acm__=1520593135_46dea76595d7861dbebb369437e542d9" target="_blank"><font class="paperlink">[paper]</font></a> <a class="togglebib" href="javascript:togglebib('gao2015scalable')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+              <pre class="bib" style="display: none" xml:space="preserve">
+@inproceedings{gao2015scalable,
+  title={Scalable multimedia retrieval by deep learning hashing with relative similarity learning},
+  author={Gao, Lianli and Song, Jingkuan and Zou, Fuhao and Zhang, Dongxiang and Shao, Jie},
+  booktitle={Proceedings of the 23rd ACM international conference on Multimedia},
+  pages={903--906},
+  year={2015},
+  organization={ACM}
+}
+</pre>
+            </li>
+
+            <li style="margin: 10px" id="andoni2015optimal">Alexandr Andoni, Ilya Razenshteyn.&nbsp; <strong>Optimal data-dependent hashing for approximate near neighbors.&nbsp;</strong> ACM symposium on Theory of computing, 2015 <a href="https://arxiv.org/pdf/1501.01062.pdf" target="_blank"><font class="paperlink">[paper]</font></a> <a class="togglebib" href="javascript:togglebib('andoni2015optimal')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+              <pre class="bib" style="display: none" xml:space="preserve">
+@inproceedings{andoni2015optimal,
+  title={Optimal data-dependent hashing for approximate near neighbors},
+  author={Andoni, Alexandr and Razenshteyn, Ilya},
+  booktitle={Proceedings of the forty-seventh annual ACM symposium on Theory of computing},
+  pages={793--801},
+  year={2015},
+  organization={ACM}
+}
+</pre>
+            </li>
+
+            <li style="margin: 10px" id="song2015supervised">Jingkuan Song, Lianli Gao, Yan Yan, Dongxiang Zhang, Nicu Sebe.&nbsp; <strong>Supervised Hashing with Pseudo Labels for Scalable Multimedia Retrieval.&nbsp;</strong> ACM international conference on Multimedia, 2015 <a href="http://mhug.disi.unitn.it/wp-content/uploads/2015/papers/2015/ACMMM2015_Jingkuan.pdf" target="_blank"><font class="paperlink">[paper]</font></a> <a class="togglebib" href="javascript:togglebib('song2015supervised')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+              <pre class="bib" style="display: none" xml:space="preserve">
+@inproceedings{song2015supervised,
+  title={Supervised hashing with pseudo labels for scalable multimedia retrieval},
+  author={Song, Jingkuan and Gao, Lianli and Yan, Yan and Zhang, Dongxiang and Sebe, Nicu},
+  booktitle={Proceedings of the 23rd ACM international conference on Multimedia},
+  pages={827--830},
+  year={2015},
+  organization={ACM}
+}
+</pre>
+            </li>
+
+            <li style="margin: 10px" id="liu2014mixed">Xianglong Liu, Yadong Mu, Bo Lang, Shih-Fu Chang.&nbsp; <strong>Mixed image-keyword query adaptive hashing over multilabel images.&nbsp;</strong> ACM Transactions on Multimedia Computing, Communications, and Applications, 2014 <a href="https://www.researchgate.net/publication/261960131_Mixed_Image-Keyword_Query_Adaptive_Hashing_over_Multilabel_Images" target="_blank"><font class="paperlink">[paper]</font></a> <a class="togglebib" href="javascript:togglebib('liu2014mixed')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+              <pre class="bib" style="display: none" xml:space="preserve">
+@article{liu2014mixed,
+  title={Mixed image-keyword query adaptive hashing over multilabel images},
+  author={Liu, Xianglong and Mu, Yadong and Lang, Bo and Chang, Shih-Fu},
+  journal={ACM Transactions on Multimedia Computing, Communications, and Applications (TOMM)},
+  volume={10},
+  number={2},
+  pages={22},
+  year={2014},
+  publisher={ACM}
+}
+</pre>
+            </li>
+
+            <li style="margin: 10px" id="leng2014random">Cong Leng, Jian Cheng, Hanqing Lu.&nbsp; <strong>Random subspace for binary codes learning in large scale image retrieval.&nbsp;</strong> Special Interest Group on Information Retrieval, 2014 <a href="http://ir.ia.ac.cn/handle/173211/4676" target="_blank"><font class="paperlink">[paper]</font></a> <a class="togglebib" href="javascript:togglebib('leng2014random')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+              <pre class="bib" style="display: none" xml:space="preserve">
+@inproceedings{leng2014random,
+  title={Random subspace for binary codes learning in large scale image retrieval},
+  author={Leng, Cong and Cheng, Jian and Lu, Hanqing},
+  booktitle={Proceedings of the 37th international ACM SIGIR conference on Research \& development in information retrieval},
+  pages={1031--1034},
+  year={2014},
+  organization={ACM}
+}
+</pre>
+            </li>
+            
+            <li style="margin: 10px" id="cheng2014semi">Jian Cheng, Cong Leng, Peng Li, Meng Wang, Hanqing Lu.&nbsp; <strong>Semi-supervised multi-graph hashing for scalable similarity search.&nbsp;</strong> Computer Vision and Image Understanding, 2014 <a href="http://159.226.21.6�������8/bitstream/173211/3334/1/CVIU2014_Semi-Supervised%20Multi-Graph%20Hashing%20for%20Scalable%20Similarity%20Search.pdf" target="_blank"><font class="paperlink">[paper]</font></a> <a class="togglebib" href="javascript:togglebib('cheng2014semi')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+              <pre class="bib" style="display: none" xml:space="preserve">
+@article{cheng2014semi,
+  title={Semi-supervised multi-graph hashing for scalable similarity search},
+  author={Cheng, Jian and Leng, Cong and Li, Peng and Wang, Meng and Lu, Hanqing},
+  journal={Computer Vision and Image Understanding},
+  volume={124},
+  pages={12--21},
+  year={2014},
+  publisher={Elsevier}
+}
+</pre>
+            </li>
+
+            <li style="margin: 10px" id="abdullah2014spectral">Amirali Abdullah, Alexandr Andoni, Ravindran Kannan, Robert Krauthgamer.&nbsp; <strong>Spectral approaches to nearest neighbor search.&nbsp;</strong> Foundations of Computer Science, 2014 <a href="https://arxiv.org/pdf/1408.0751.pdf" target="_blank"><font class="paperlink">[paper]</font></a> <a class="togglebib" href="javascript:togglebib('abdullah2014spectral')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+              <pre class="bib" style="display: none" xml:space="preserve">
+@inproceedings{abdullah2014spectral,
+  title={Spectral approaches to nearest neighbor search},
+  author={Abdullah, Amirali and Andoni, Alexandr and Kannan, Ravindran and Krauthgamer, Robert},
+  booktitle={Foundations of Computer Science (FOCS), 2014 IEEE 55th Annual Symposium on},
+  pages={581--590},
+  year={2014},
+  organization={IEEE}
+}
+</pre>
+            </li>
+
+            <li style="margin: 10px" id="sundaram2013streaming">Narayanan Sundaram, Aizana Turmukhametova, Nadathur Satish, Todd Mostak, Piotr Indyk, Samuel Madden, Pradeep Dubey.&nbsp; <strong>Streaming similarity search over one billion tweets using parallel locality-sensitive hashing.&nbsp;</strong> International Conference on Very Large Data Bases, 2013 <a href="https://dspace.mit.edu/openaccess-disseminate/1721.1/86923" target="_blank"><font class="paperlink">[paper]</font></a> <a class="togglebib" href="javascript:togglebib('sundaram2013streaming')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+              <pre class="bib" style="display: none" xml:space="preserve">
+@article{sundaram2013streaming,
+  title={Streaming similarity search over one billion tweets using parallel locality-sensitive hashing},
+  author={Sundaram, Narayanan and Turmukhametova, Aizana and Satish, Nadathur and Mostak, Todd and Indyk, Piotr and Madden, Samuel and Dubey, Pradeep},
+  journal={Proceedings of the VLDB Endowment},
+  volume={6},
+  number={14},
+  pages={1930--1941},
+  year={2013},
+  publisher={VLDB Endowment}
+}
+</pre>
+            </li>
+            <li style="margin: 10px" id="li2013spectral">Peng Li, Meng Wang, Jian Cheng, Changsheng Xu, H Lu.&nbsp; <strong>Spectral Hashing with Semantically Consistent Graph for Image Indexing.&nbsp;</strong> IEEE Transactions on Multimedia, 2013 <a href="http://www.nlpr.ia.ac.cn/2013papers/gjkw/gk65.pdf" target="_blank"><font class="paperlink">[paper]</font></a> <a class="togglebib" href="javascript:togglebib('li2013spectral')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+              <pre class="bib" style="display: none" xml:space="preserve">
+@article{li2013spectral,
+  title={Spectral hashing with semantically consistent graph for image indexing},
+  author={Li, Peng and Wang, Meng and Cheng, Jian and Xu, Changsheng and Lu, Hanqing},
+  journal={IEEE Transactions on Multimedia},
+  volume={15},
+  number={1},
+  pages={141--152},
+  year={2013},
+  publisher={IEEE}
+}
+</pre>
+            </li>
+
+            <li style="margin: 10px" id="zhu2013linear">Xiaofeng Zhu, Zi Huang, Heng Tao Shen, Xin Zhao.&nbsp; <strong>Linear cross-modal hashing for efficient multimedia search.&nbsp;</strong> ACM international conference on Multimedia, 2013 <a href="https://people.cs.clemson.edu/~jzwang/1501863/mm2013/p143-zhu.pdf" target="_blank"><font class="paperlink">[paper]</font></a> <a class="togglebib" href="javascript:togglebib('zhu2013linear')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+              <pre class="bib" style="display: none" xml:space="preserve">
+@inproceedings{zhu2013linear,
+  title={Linear cross-modal hashing for efficient multimedia search},
+  author={Zhu, Xiaofeng and Huang, Zi and Shen, Heng Tao and Zhao, Xin},
+  booktitle={Proceedings of the 21st ACM international conference on Multimedia},
+  pages={143--152},
+  year={2013},
+  organization={ACM}
+}
+</pre>
+            </li>
+
+            <li style="margin: 10px" id="song2013effective">Jingkuan Song.&nbsp; <strong>Effective hashing for large-scale multimedia search.&nbsp;</strong> SIGMOD(Proceedings of the 2013 SIGMOD/PODS Ph. D. symposium), 2013 <a href="http://delivery.acm.org/10.1145/2490000/2483585/p55-song.pdf?ip=219.239.227.202&id=2483585&acc=ACTIVE%20SERVICE&key=BF85BBA5741FDC6E%2E478E8F2EC4A762F8%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&__acm__=1520593207_bfe3dd91c7915cfb9a43ab222e558849" target="_blank"><font class="paperlink">[paper]</font></a> <a class="togglebib" href="javascript:togglebib('song2013effective')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+              <pre class="bib" style="display: none" xml:space="preserve">
+@inproceedings{song2013effective,
+  title={Effective hashing for large-scale multimedia search},
+  author={Song, Jingkuan},
+  booktitle={Proceedings of the 2013 SIGMOD/PODS Ph. D. symposium},
+  pages={55--60},
+  year={2013},
+  organization={ACM}
+}
+</pre>
+            </li>
+
+            <li style="margin: 10px" id="zhu2013sparse">Xiaofeng Zhu, Zi Huang, Hong Cheng, Jiangtao Cui, Heng Tao Shen.&nbsp; <strong>Sparse hashing for fast multimedia search.&nbsp;</strong> ACM Transactions on Information Systems, 2013 <a href="https://sites.google.com/site/seanzhuxf/tois13.pdf" target="_blank"><font class="paperlink">[paper]</font></a> <a class="togglebib" href="javascript:togglebib('zhu2013sparse')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+              <pre class="bib" style="display: none" xml:space="preserve">
+@article{zhu2013sparse,
+  title={Sparse hashing for fast multimedia search},
+  author={Zhu, Xiaofeng and Huang, Zi and Cheng, Hong and Cui, Jiangtao and Shen, Heng Tao},
+  journal={ACM Transactions on Information Systems (TOIS)},
+  volume={31},
+  number={2},
+  pages={9},
+  year={2013},
+  publisher={ACM}
+}
+</pre>
+            </li>
+
+            <li style="margin: 10px" id="gong2013iterative">Yunchao Gong, Svetlana Lazebnik, Albert Gordo, Florent Perronnin.&nbsp; <strong>Iterative Quantization: A Procrustean Approach to Learning Binary Codes for Large-scale Image Retrieval.&nbsp;</strong> IEEE Transactions on Pattern Analysis and Machine Intelligence, 2012 <a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6296665" target="_blank"><font class="paperlink">[paper]</font></a> <a class="togglebib" href="javascript:togglebib('gong2013iterative')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+              <pre class="bib" style="display: none" xml:space="preserve">
+@article{gong2013iterative,
+  title={Iterative quantization: A procrustean approach to learning binary codes for large-scale image retrieval},
+  author={Gong, Yunchao and Lazebnik, Svetlana and Gordo, Albert and Perronnin, Florent},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  volume={35},
+  number={12},
+  pages={2916--2929},
+  year={2013},
+  publisher={IEEE}
+}
+</pre>
+            </li>
+
+            <li style="margin: 10px" id="mu2012multimedia">Yadong Mu, Xiangyu Chen, Xianglong Liu, Tat-Seng Chua, Shuicheng Yan.&nbsp; <strong>Multimedia semantics-aware query-adaptive hashing with bits reconfigurability.&nbsp;</strong> International Journal of Multimedia Information Retrieval, 2012 <a href="https://link.springer.com/content/pdf/10.1007%2Fs13735-012-0003-7.pdf" target="_blank"><font class="paperlink">[paper]</font></a> <a class="togglebib" href="javascript:togglebib('mu2012multimedia')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+              <pre class="bib" style="display: none" xml:space="preserve">
+@article{mu2012multimedia,
+  title={Multimedia semantics-aware query-adaptive hashing with bits reconfigurability},
+  author={Mu, Yadong and Chen, Xiangyu and Liu, Xianglong and Chua, Tat-Seng and Yan, Shuicheng},
+  journal={International Journal of Multimedia Information Retrieval},
+  volume={1},
+  number={1},
+  pages={59--70},
+  year={2012},
+  publisher={Springer}
+}
+</pre>
+            </li>
+
+            <li style="margin: 10px" id="liu2012compact">Xianglong Liu, Yadong Mu, Bo Lang, Shih-Fu Chang.&nbsp; <strong>Compact hashing for mixed image-keyword query over multi-label images.&nbsp;</strong> ICMR(Proceedings of the 2nd ACM International Conference on Multimedia Retrieval), 2012 <a href="http://www.ee.columbia.edu/ln/dvmm/publications/12/ICMR_CompactHashing.pdf" target="_blank"><font class="paperlink">[paper]</font></a> <a href="http://sites.nlsde.buaa.edu.cn/~xlliu/bsh.zip" target="_blank"><font class="paperlink">[code]</font></a> <a class="togglebib" href="javascript:togglebib('liu2012compact')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+              <pre class="bib" style="display: none" xml:space="preserve">
+@inproceedings{liu2012compact,
+  title={Compact hashing for mixed image-keyword query over multi-label images},
+  author={Liu, Xianglong and Mu, Yadong and Lang, Bo and Chang, Shih-Fu},
+  booktitle={Proceedings of the 2nd ACM International Conference on Multimedia Retrieval},
+  pages={18},
+  year={2012},
+  organization={ACM}
+}
+</pre>
+            </li>
+
+             </li>
+            <li style="margin: 10px" id="song2011multiple">Jingkuan Song, Yi Yang, Zi Huang, Heng Tao Shen, Richang Hong.&nbsp; <strong>Multiple feature hashing for real-time large scale near-duplicate video retrieval.&nbsp;</strong> ACM international conference on Multimedia, 2011 <a href="http://dl.acm.org/citation.cfm?id=2072354" target="_blank"><font class="paperlink">[paper]</font></a> <a class="togglebib" href="javascript:togglebib('song2011multiple')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+              <pre class="bib" style="display: none" xml:space="preserve">
+@inproceedings{song2011multiple,
+  title={Multiple feature hashing for real-time large scale near-duplicate video retrieval},
+  author={Song, Jingkuan and Yang, Yi and Huang, Zi and Shen, Heng Tao and Hong, Richang},
+  booktitle={Proceedings of the 19th ACM international conference on Multimedia},
+  pages={423--432},
+  year={2011},
+  organization={ACM}
+}
+</pre>
+            </li>
+
+            <li style="margin: 10px" id="li2011theory">P Li, AC K?nig.&nbsp; <strong>Theory and applications of b-bit minwise hashing.&nbsp;</strong> Communications of the ACM, 2011 <a href="http://delivery.acm.org/10.1145/1980000/1978566/p101-li.pdf?ip=219.239.227.202&id=1978566&acc=ACTIVE%20SERVICE&key=BF85BBA5741FDC6E%2E478E8F2EC4A762F8%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&__acm__=1520524227_ae651fee2bc4d932929afd829605af25" target="_blank"><font class="paperlink">[paper]</font></a> <a class="togglebib" href="javascript:togglebib('li2011theory')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+              <pre class="bib" style="display: none" xml:space="preserve">
+@article{li2011theory,
+  title={Theory and applications of b-bit minwise hashing},
+  author={Li, Ping and K{\"o}nig, Arnd Christian},
+  journal={Communications of the ACM},
+  volume={54},
+  number={8},
+  pages={101--109},
+  year={2011},
+  publisher={ACM}
+}
+</pre>
+            </li>
+
+            <li style="margin: 10px" id="andoni2011nearest">Alexandr Andoni.&nbsp; <strong>Nearest Neighbor Search in High-Dimensional Spaces..&nbsp;</strong> International Symposium on Mathematical Foundations of Computer Science, 2011 <a href="https://pdfs.semanticscholar.org/6ece/5a715bb0bd4e5a3c78e9e960deafb97354f5.pdf" target="_blank"><font class="paperlink">[paper]</font></a> <a class="togglebib" href="javascript:togglebib('andoni2011nearest')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+              <pre class="bib" style="display: none" xml:space="preserve">
+@inproceedings{andoni2011nearest,
+  title={Nearest Neighbor Search in High-Dimensional Spaces.},
+  author={Andoni, Alexandr},
+  booktitle={MFCS},
+  pages={1},
+  year={2011}
+}
+</pre>
+            </li>
+
+            <li style="margin: 10px" id="he2010scalable">Junfeng He, Wei Liu, Shih-Fu Chang.&nbsp; <strong>Scalable similarity search with optimized kernel hashing.&nbsp;</strong> Knowledge Discovery and Data Mining conference, 2010 <a href="http://delivery.acm.org/10.1145/1840000/1835946/p1129-he.pdf?ip=219.239.227.202&id=1835946&acc=ACTIVE%20SERVICE&key=BF85BBA5741FDC6E%2E478E8F2EC4A762F8%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&__acm__=1520523661_975f24b080a68e841fe801d784436e41" target="_blank"><font class="paperlink">[paper]</font></a> <a class="togglebib" href="javascript:togglebib('he2010scalable')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+              <pre class="bib" style="display: none" xml:space="preserve">
+@inproceedings{he2010scalable,
+  title={Scalable similarity search with optimized kernel hashing},
+  author={He, Junfeng and Liu, Wei and Chang, Shih-Fu},
+  booktitle={Proceedings of the 16th ACM SIGKDD international conference on Knowledge discovery and data mining},
+  pages={1129--1138},
+  year={2010},
+  organization={ACM}
+}
+</pre>
+          </li>
+                  <li style="margin: 10px" id="sundaram2013streaming">Narayanan Sundaram, Aizana Turmukhametova, Nadathur Satish, Todd Mostak, Piotr Indyk, Samuel Madden, Pradeep Dubey.&nbsp; <strong>Streaming similarity search over one billion tweets using parallel locality-sensitive hashing.&nbsp;</strong> International Conference on Very Large Data Bases, 2013 <a href="https://dspace.mit.edu/openaccess-disseminate/1721.1/86923" target="_blank"><font class="paperlink">[paper]</font></a> <a class="togglebib" href="javascript:togglebib('sundaram2013streaming')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+                    <pre class="bib" style="display: none" xml:space="preserve">
+@article{sundaram2013streaming,
+  title={Streaming similarity search over one billion tweets using parallel locality-sensitive hashing},
+  author={Sundaram, Narayanan and Turmukhametova, Aizana and Satish, Nadathur and Mostak, Todd and Indyk, Piotr and Madden, Samuel and Dubey, Pradeep},
+  journal={Proceedings of the VLDB Endowment},
+  volume={6},
+  number={14},
+  pages={1930--1941},
+  year={2013},
+  publisher={VLDB Endowment}
+}
+</pre>
+
+            </li>
+
+          
+          </ul>
+        </div>
+        <br>
+        <a name="Machine Learning"><font class="cata">Large Scale Machine Learning</font></a>
+        <div class="pub">
+          <ul>
+
+            <li style="margin: 10px" id="song2017binary1">Jingkuan Song
+              .&nbsp; <strong>Binary Generative Adversarial Networks for Image Retrieval.&nbsp;</strong> ARXIV, 2017 <a href="http://xueshu.baidu.com/s?wd=paperuri%3A%2857e2d1d3acf061aa956290987f4c9c2f%29&filter=sc_long_sign&tn=SE_xueshusource_2kduw22v&sc_vurl=http%3A%2F%2Farxiv.org%2Fabs%2F1708.04150&ie=utf-8&sc_us=15267525572303723242" target="_blank"><font class="paperlink">[paper]</font></a> <a class="togglebib" href="javascript:togglebib('song2017binary1')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+              <pre class="bib" style="display: none" xml:space="preserve">
+@article{song2017binary,
+  title={Binary Generative Adversarial Networks for Image Retrieval},
+  author={Song, Jingkuan},
+  journal={arXiv preprint arXiv:1708.04150},
+  year={2017}
+}
+</pre>
+            </li>
+
+            <li style="margin: 10px" id="zhang2017large">Xiaopeng Zhang, Hui Zhang, Yong Chen, Xianglong Liu.&nbsp; <strong>Large-Margin Supervised Hashing.&nbsp;</strong> International Conference on Neural Information Processing, 2017 <a href="https://link.springer.com/content/pdf/10.1007%2F978-3-319-70087-8_28.pdf" target="_blank"><font class="paperlink">[paper]</font></a> <a class="togglebib" href="javascript:togglebib('zhang2017large')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+              <pre class="bib" style="display: none" xml:space="preserve">
+@inproceedings{zhang2017large,
+  title={Large-Margin Supervised Hashing},
+  author={Zhang, Xiaopeng and Zhang, Hui and Chen, Yong and Liu, Xianglong},
+  booktitle={International Conference on Neural Information Processing},
+  pages={259--269},
+  year={2017},
+  organization={Springer}
+}
+</pre>
+            </li>
+
+            <li style="margin: 10px" id="chen2017accelerated">Wenshuo Chen, Guiguang Ding, Zijia Lin, Jisheng Pei.&nbsp; <strong>Accelerated Manhattan hashing via bit-remapping with location information.&nbsp;</strong> MULTIMED TOOLS APPL, 2017 <a href="https://link.springer.com/content/pdf/10.1007%2Fs11042-015-3217-x.pdf" target="_blank"><font class="paperlink">[paper]</font></a> <a class="togglebib" href="javascript:togglebib('chen2017accelerated')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+              <pre class="bib" style="display: none" xml:space="preserve">
+@article{chen2017accelerated,
+  title={Accelerated Manhattan hashing via bit-remapping with location information},
+  author={Chen, Wenshuo and Ding, Guiguang and Lin, Zijia and Pei, Jisheng},
+  journal={Multimedia Tools and Applications},
+  volume={76},
+  number={2},
+  pages={2441--2466},
+  year={2017},
+  publisher={Springer}
+}
+</pre>
+            </li>
+
+            <li style="margin: 10px" id="feng2017deep">Jie Feng, Svebor Karaman, Shih-Fu Chang.&nbsp; <strong>Deep image set hashing.&nbsp;</strong> Applications of Computer Vision, 2017 <a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7926726" target="_blank"><font class="paperlink">[paper]</font></a> <a class="togglebib" href="javascript:togglebib('feng2017deep')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+              <pre class="bib" style="display: none" xml:space="preserve">
+@inproceedings{feng2017deep,
+  title={Deep image set hashing},
+  author={Feng, Jie and Karaman, Svebor and Chang, Shih-Fu},
+  booktitle={Applications of Computer Vision (WACV), 2017 IEEE Winter Conference on},
+  pages={1241--1250},
+  year={2017},
+  organization={IEEE}
+}
+</pre>
+
+            </li>
+                  <li style="margin: 10px" id="Shrivastava2016Scalable">Ryan Spring, Anshumali Shrivastava.&nbsp; <strong>Scalable and sustainable deep learning via randomized hashing.&nbsp;</strong> Knowledge Discovery and Data Mining conference, 2017 <a href="https://arxiv.org/pdf/1602.08194.pdf" target="_blank"><font class="paperlink">[paper]</font></a> <a class="togglebib" href="javascript:togglebib('Shrivastava2016Scalable')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+                    <pre class="bib" style="display: none" xml:space="preserve">
+@article{Shrivastava2016Scalable,
+  title={Scalable and Sustainable Deep Learning via Randomized Hashing},
+  author={Shrivastava, Anshumali and Shrivastava, Anshumali},
+  pages={445-454},
+  year={2016},
+}
+</pre>
+
+            </li>
+
+            <li style="margin: 10px" id="zhu2016deep">Han Zhu, Mingsheng Long, Jianmin Wang, Yue Cao.&nbsp; <strong>Deep Hashing Network for Efficient Similarity Retrieval.&nbsp;</strong> AAAI Conference on Artificial Intelligence, 2016 <a href="https://pdfs.semanticscholar.org/eb0c/64244dcf238a2cbf479ab2fdc9047fc80bc5.pdf?_ga=2.9536181.1849304306.1519716536-813396501.1516260645" target="_blank"><font class="paperlink">[paper]</font></a> <a href="https://github.com/thuml/hash-caffe" target="_blank"><font class="paperlink">[code]</font></a> <a class="togglebib" href="javascript:togglebib('zhu2016deep')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+              <pre class="bib" style="display: none" xml:space="preserve">
+@inproceedings{zhu2016deep,
+  title={Deep Hashing Network for Efficient Similarity Retrieval.},
+  author={Zhu, Han and Long, Mingsheng and Wang, Jianmin and Cao, Yue},
+  booktitle={AAAI},
+  pages={2415--2421},
+  year={2016}
+}
+</pre>
+            </li>
+
+            <li style="margin: 10px" id="song2016distance">Jingkuan Song, Heng Tao Shen, Jianfeng Wang, Zi Huang, Nicu Sebe, Jingdong Wang.&nbsp; <strong>A distance-computation-free search scheme for binary code databases.&nbsp;</strong> ACM Conference on Multimedia, 2016 <a href="http://xueshu.baidu.com/s?wd=paperuri%3A%28f09f4e62f1eace564450305e58d6dc4f%29&filter=sc_long_sign&tn=SE_xueshusource_2kduw22v&sc_vurl=http%3A%2F%2Fieeexplore.ieee.org%2Fdocument%2F7377105%2F&ie=utf-8&sc_us=2868293467133503957" target="_blank"><font class="paperlink">[paper]</font></a> <a class="togglebib" href="javascript:togglebib('song2016distance')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+              <pre class="bib" style="display: none" xml:space="preserve">
+@article{song2016distance,
+  title={A distance-computation-free search scheme for binary code databases},
+  author={Song, Jingkuan and Shen, Heng Tao and Wang, Jianfeng and Huang, Zi and Sebe, Nicu and Wang, Jingdong},
+  journal={IEEE Transactions on Multimedia},
+  volume={18},
+  number={3},
+  pages={484--495},
+  year={2016},
+  publisher={IEEE}
+}
+</pre>
+            </li>
+
+            <li style="margin: 10px" id="shen2016fast">Fumin Shen, Xiang Zhou, Yang Yang, Jingkuan Song, Heng Tao Shen, Dacheng Tao.&nbsp; <strong>A fast optimization method for general binary code learning.&nbsp;</strong> IEEE Transactions on Image Processing, 2016 <a href="http://cfm.uestc.edu.cn/~fshen/TIP2016.pdf" target="_blank"><font class="paperlink">[paper]</font></a> <a class="togglebib" href="javascript:togglebib('shen2016fast')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+              <pre class="bib" style="display: none" xml:space="preserve">
+@article{shen2016fast,
+  title={A fast optimization method for general binary code learning},
+  author={Shen, Fumin and Zhou, Xiang and Yang, Yang and Song, Jingkuan and Shen, Heng Tao and Tao, Dacheng},
+  journal={IEEE Transactions on Image Processing},
+  volume={25},
+  number={12},
+  pages={5610--5621},
+  year={2016},
+  publisher={IEEE}
+}
+</pre>
+            </li>
+
+            <li style="margin: 10px" id="shen2015hashing1">Fumin Shen, Chunhua Shen, Qinfeng Shi, Anton van den Hengel, Zhenmin Tang, Heng Tao Shen.&nbsp; <strong>Hashing on Nonlinear Manifolds.&nbsp;</strong> IEEE Trans. Image Processing, 2015 <a href="https://arxiv.org/pdf/1412.0826" target="_blank"><font class="paperlink">[paper]</font></a> <a class="togglebib" href="javascript:togglebib('shen2015hashing1')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+              <pre class="bib" style="display: none" xml:space="preserve">
+@article{shen2015hashing,
+  title={Hashing on nonlinear manifolds},
+  author={Shen, Fumin and Shen, Chunhua and Shi, Qinfeng and van den Hengel, Anton and Tang, Zhenmin and Shen, Heng Tao},
+  journal={IEEE Transactions on Image Processing},
+  volume={24},
+  number={6},
+  pages={1839--1851},
+  year={2015},
+  publisher={IEEE}
+}
+</pre>
+            </li>
+            <li style="margin: 10px" id="zhou2015deep1">Ke Zhou, Yu Liu, Jinkuan Song, Linyu Yan, Fuhao Zou, Fumin Shen.&nbsp; <strong>Deep Self-taught Hashing for Image Retrieval.&nbsp;</strong> TOC(Transactions on Cybernetics), 2015 <a href="http://or.nsfc.gov.cn/bitstream/00001903-5/157648/1/1000013938576.pdf" target="_blank"><font class="paperlink">[paper]</font></a> <a class="togglebib" href="javascript:togglebib('zhou2015deep1')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+              <pre class="bib" style="display: none" xml:space="preserve">
+@inproceedings{zhou2015deep,
+  title={Deep self-taught hashing for image retrieval},
+  author={Zhou, Ke and Liu, Yu and Song, Jingkuan and Yan, Linyu and Zou, Fuhao and Shen, Fumin},
+  booktitle={Proceedings of the 23rd ACM international conference on Multimedia},
+  pages={1215--1218},
+  year={2015},
+  organization={ACM}
+}
+</pre>
+            </li>
+
+            <li style="margin: 10px" id="liong2015deep">Venice Erin Liong, Jiwen Lu, Gang Wang, Pierre Moulin, Jie Zhou.&nbsp; <strong>Deep Hashing for Compact Binary Codes Learning.&nbsp;</strong> IEEE Conference on Computer Vision and Pattern Recognition, 2015 <a href="http://ivg.au.tsinghua.edu.cn/paper/2015_Deep%20hashing%20for%20compact%20binary%20codes%20learning.pdf" target="_blank"><font class="paperlink">[paper]</font></a> <a class="togglebib" href="javascript:togglebib('liong2015deep')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+              <pre class="bib" style="display: none" xml:space="preserve">
+@inproceedings{liong2015deep,
+  title={Deep hashing for compact binary codes learning.},
+  author={Liong, Venice Erin and Lu, Jiwen and Wang, Gang and Moulin, Pierre and Zhou, Jie and others},
+  booktitle={CVPR},
+  volume={1},
+  number={2},
+  pages={3},
+  year={2015}
+}
+</pre>
+            </li>
+
+            <li style="margin: 10px" id="leng2015online">Cong Leng, Jiaxiang Wu, Jian Cheng, Xiao Bai, Hanqing Lu.&nbsp; <strong>Online sketching hashing.&nbsp;</strong> IEEE Conference on Computer Vision and Pattern Recognition, 2015 <a href="https://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Leng_Online_Sketching_Hashing_2015_CVPR_paper.pdf" target="_blank"><font class="paperlink">[paper]</font></a> <a href="http://www.nlpr.ia.ac.cn/jcheng/papers/CVPR2015.OSH.tar.gz" target="_blank"><font class="paperlink">[code]</font></a><a class="togglebib" href="javascript:togglebib('leng2015online')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+              <pre class="bib" style="display: none" xml:space="preserve">
+@inproceedings{leng2015online,
+  title={Online sketching hashing},
+  author={Leng, Cong and Wu, Jiaxiang and Cheng, Jian and Bai, Xiao and Lu, Hanqing},
+  booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+  pages={2503--2511},
+  year={2015}
+}
+</pre>
+            </li>
+
+            <li style="margin: 10px" id="mu2014hash">Yadong Mu, Gang Hua, Wei Fan, Shih-Fu Chang.&nbsp; <strong>Hash-SVM: Scalable kernel machines for large-scale visual classification.&nbsp;</strong> IEEE Conference on Computer Vision and Pattern Recognition, 2014 <a href="http://openaccess.thecvf.com/content_cvpr_2014/papers/Mu_Hash-SVM_Scalable_Kernel_2014_CVPR_paper.pdf" target="_blank"><font class="paperlink">[paper]</font></a> <a class="togglebib" href="javascript:togglebib('mu2014hash')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+              <pre class="bib" style="display: none" xml:space="preserve">
+@inproceedings{mu2014hash,
+  title={Hash-SVM: Scalable kernel machines for large-scale visual classification},
+  author={Mu, Yadong and Hua, Gang and Fan, Wei and Chang, Shih-Fu},
+  booktitle={Computer Vision and Pattern Recognition (CVPR), 2014 IEEE Conference on},
+  pages={979--986},
+  year={2014},
+  organization={IEEE}
+}
+</pre>
+            </li>
+
+            <li style="margin: 10px" id="gong2013learning">Yunchao Gong, Sanjiv Kumar, Henry A Rowley, Svetlana Lazebnik.&nbsp; <strong>Learning binary codes for high-dimensional data using bilinear projections.&nbsp;</strong> IEEE Conference on Computer Vision and Pattern Recognition, 2013 <a href="http://www.sanjivk.com/bilinearHashing_CVPR13.pdf" target="_blank"><font class="paperlink">[paper]</font></a> <a class="togglebib" href="javascript:togglebib('gong2013learning')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+              <pre class="bib" style="display: none" xml:space="preserve">
+@inproceedings{gong2013learning,
+  title={Learning binary codes for high-dimensional data using bilinear projections},
+  author={Gong, Yunchao and Kumar, Sanjiv and Rowley, Henry A and Lazebnik, Svetlana},
+  booktitle={Computer Vision and Pattern Recognition (CVPR), 2013 IEEE Conference on},
+  pages={484--491},
+  year={2013},
+  organization={IEEE}
+}
+</pre>
+            </li>
+
+            <li style="margin: 10px" id="lin2013general">Guosheng Lin, Chunhua Shen, David Suter, Anton van den Hengel.&nbsp; <strong>A General Two-Step Approach to Learning-Based Hashing.&nbsp;</strong> IEEE International Conference on Computer Vision, 2013 <a href="https://arxiv.org/pdf/1309.1853.pdf" target="_blank"><font class="paperlink">[paper]</font></a> <a class="togglebib" href="javascript:togglebib('lin2013general')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+              <pre class="bib" style="display: none" xml:space="preserve">
+@inproceedings{lin2013general,
+  title={A general two-step approach to learning-based hashing},
+  author={Lin, Guosheng and Shen, Chunhua and Suter, David and Van Den Hengel, Anton},
+  booktitle={Computer Vision (ICCV), 2013 IEEE International Conference on},
+  pages={2552--2559},
+  year={2013},
+  organization={IEEE}
+}
+</pre>
+            </li>
+
+            <li style="margin: 10px" id="li2011hashing">P Li, A Shrivastava, JL Moore.&nbsp; <strong>Hashing algorithms for large-scale learning.&nbsp;</strong> Neural Information Processing Systems, 2011 <a href="http://papers.nips.cc/paper/4403-hashing-algorithms-for-large-scale-learning.pdf" target="_blank"><font class="paperlink">[paper]</font></a> <a class="togglebib" href="javascript:togglebib('li2011hashing')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+              <pre class="bib" style="display: none" xml:space="preserve">
+@inproceedings{li2011hashing,
+  title={Hashing algorithms for large-scale learning},
+  author={Li, Ping and Shrivastava, Anshumali and Moore, Joshua L and K{\"o}nig, Arnd C},
+  booktitle={Advances in neural information processing systems},
+  pages={2672--2680},
+  year={2011}
+}
+</pre>
+            </li>
+            
+            <li style="margin: 10px" id="hu2018hashing1">Qinghao Hu, Peisong Wang, Jian Cheng.&nbsp; <strong>From Hashing to CNNs: Training BinaryWeight Networks via Hashing.&nbsp;</strong> arXiv, 2018 <a href="https://arxiv.org/pdf/1802.02733.pdf" target="_blank"><font class="paperlink">[paper]</font></a> <a class="togglebib" href="javascript:togglebib('hu2018hashing1')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+              <pre class="bib" style="display: none" xml:space="preserve">
+@article{hu2018hashing,
+  title={From Hashing to CNNs: Training BinaryWeight Networks via Hashing},
+  author={Hu, Qinghao and Wang, Peisong and Cheng, Jian},
+  journal={arXiv preprint arXiv:1802.02733},
+  year={2018}
+}
+</pre>
+            </li>
+            <li style="margin: 10px" id="cao2017hashnet">Zhangjie Cao, Mingsheng Long, Jianmin Wang, Philip S Yu.&nbsp; <strong>HashNet: Deep Learning to Hash by Continuation.&nbsp;</strong> IEEE International Conference on Computer Vision, 2017 <a href="http://xueshu.baidu.com/s?wd=paperuri%3A%28dcedf68325801ab5dd677644634715da%29&filter=sc_long_sign&tn=SE_xueshusource_2kduw22v&sc_vurl=http%3A%2F%2Farxiv.org%2Fpdf%2F1702.00758&ie=utf-8&sc_us=10977216048897438815" target="_blank"><font class="paperlink">[paper]</font></a> <a href="https://github.com/thuml/HashNet" target="_blank"><font class="paperlink">[code]</font></a> <a class="togglebib" href="javascript:togglebib('cao2017hashnet')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+              <pre class="bib" style="display: none" xml:space="preserve">
+@article{cao2017hashnet,
+  title={Hashnet: Deep learning to hash by continuation},
+  author={Cao, Zhangjie and Long, Mingsheng and Wang, Jianmin and Yu, Philip S},
+  journal={arXiv preprint arXiv:1702.00758},
+  year={2017}
+}
+</pre>
+            </li>
+            <li style="margin: 10px" id="guo2017sitnet">Yuchen Guo, Guiguang Ding, Jungong Han, Yue Gao.&nbsp; <strong>SitNet: discrete similarity transfer network for zero-shot hashing.&nbsp;</strong> International Joint Conferences on Artificial Intelligence, 2017 <a href="http://www.ijcai.org/proceedings/2017/0245.pdf" target="_blank"><font class="paperlink">[paper]</font></a> <a class="togglebib" href="javascript:togglebib('guo2017sitnet')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+              <pre class="bib" style="display: none" xml:space="preserve">
+@inproceedings{guo2017sitnet,
+  title={SitNet: discrete similarity transfer network for zero-shot hashing},
+  author={Guo, Yuchen and Ding, Guiguang and Han, Jungong and Gao, Yue},
+  booktitle={Proceedings of the 26th International Joint Conference on Artificial Intelligence},
+  pages={1767--1773},
+  year={2017},
+  organization={AAAI Press}
+}
+</pre>
+            </li>
+            <li style="margin: 10px" id="indyk2017practical">Piotr Indyk, Ilya Razenshteyn, Tal Wagner.&nbsp; <strong>Practical Data-Dependent Metric Compression with Provable Guarantees.&nbsp;</strong> Neural Information Processing Systems, 2018 <a href="http://papers.nips.cc/paper/6855-practical-data-dependent-metric-compression-with-provable-guarantees.pdf" target="_blank"><font class="paperlink">[paper]</font></a> <a class="togglebib" href="javascript:togglebib('indyk2017practical')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+              <pre class="bib" style="display: none" xml:space="preserve">
+@inproceedings{indyk2017practical,
+  title={Practical Data-Dependent Metric Compression with Provable Guarantees},
+  author={Indyk, Piotr and Razenshteyn, Ilya and Wagner, Tal},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={2614--2623},
+  year={2017}
+}
+</pre>
+            </li>
+            <li style="margin: 10px" id="indyk2017near">Piotr Indyk, Tal Wagner.&nbsp; <strong>Near-optimal (euclidean) metric compression.&nbsp;</strong> ACM-SIAM Symposium on Discrete Algorithms, 2017 <a href="http://epubs.siam.org/doi/pdf/10.1137/1.9781611974782.45" target="_blank"><font class="paperlink">[paper]</font></a> <a class="togglebib" href="javascript:togglebib('indyk2017near')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+              <pre class="bib" style="display: none" xml:space="preserve">
+@inproceedings{indyk2017near,
+  title={Near-optimal (euclidean) metric compression},
+  author={Indyk, Piotr and Wagner, Tal},
+  booktitle={Proceedings of the Twenty-Eighth Annual ACM-SIAM Symposium on Discrete Algorithms},
+  pages={710--723},
+  year={2017},
+  organization={SIAM}
+}
+</pre>
+            </li>
+            <li style="margin: 10px" id="shen2017deep">Fumin Shen, Xin Gao, Li Liu, Yang Yang, Heng Tao Shen.&nbsp; <strong>Deep asymmetric pairwise hashing.&nbsp;</strong> ACM Multimedia Conference, 2017 <a href="http://bmc.uestc.edu.cn/~fshen/DAPH.pdf" target="_blank"><font class="paperlink">[paper]</font></a> <a class="togglebib" href="javascript:togglebib('shen2017deep')" shape="rect"><font class="bibtex">[bibtex]</font></a>
+              <pre class="bib" style="display: none" xml:space="preserve">
+@inproceedings{shen2017deep,
+  title={Deep asymmetric pairwise hashing},
+  author={Shen, Fumin and Gao, Xin and Liu, Li and Yang, Yang and Shen, Heng Tao},
+  booktitle={Proceedings of the 2017 ACM on Multimedia Conference},
+  pages={1522--1530},
+  year={2017},
+  organization={ACM}
+}
+</pre>
+            </li>
+          </ul>
+        </div>
+</td>
+</tr>
+</tbody>
+</table>
+
+</body>
+</html>
