@@ -1,0 +1,861 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="Xianglong Liu">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="./bootstrap.min.css"><!--http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/-->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link href="./styles.css" rel="stylesheet">
+<title>Welcome to Xianglong's homepage</title>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+
+<script>
+// Load this when the DOM is ready
+$(function(){
+  // You used .myCarousel here. 
+  // That's the class selector not the id selector,
+  // which is #myCarousel
+  $('#carousel-example-generic').carousel();
+});
+</script>
+
+</head>
+    
+<body> 
+<script xml:space="preserve"> 
+//<![CDATA[
+ function hideallbibs()
+{
+    var el = document.getElementsByTagName("div") ;
+    for (var i = 0 ; i < el.length ; ++i) {
+        if (el[i].className == "pub") {
+            var bib = el[i].getElementsByTagName("pre") ;
+            if (bib.length > 0) {
+                bib [0] .style.display = 'none' ;
+            }
+        }
+    }
+}
+ 
+function togglebib(paperid)
+{
+    var paper = document.getElementById(paperid) ;
+    var bib = paper.getElementsByTagName('pre') ;
+    if (bib.length > 0) {
+        if (bib [0] .style.display == 'none') {
+            bib [0] .style.display = 'block' ;
+        } else {
+            bib [0] .style.display = 'none' ;
+        }
+    }
+}
+//]]>
+</script>
+
+
+<div id="container">	
+
+<div id="main">
+	<div id="pic">
+		<img src="./image/mypics2.jpg"/>
+	</div>
+	<div id="department">
+		<h1>Xianglong Liu</h1>
+		<p class="note">Professor</a></p>
+		<p> <a href="http://www.nlsde.buaa.edu.cn/">State Key Laboratory of Software Development Environment</a><br/>
+		School of Computer Science and Engineering, Beihang University, China</p>
+
+		<p> Office: Room G606, New Main Building<br>
+			Address: 37 Xueyuan Road, Haidian, Beijing 100191, China<br/>
+			Tel.: +86-10-8233-8092 <br />
+			Email: xlliu@nlsde.buaa.edu.cn / xlliu@buaa.edu.cn
+		</p>
+
+		<p>
+I am a Full Professor in School of Computer Science and Engineering at Beihang University. I received BS and Ph.D degrees under supervision of Prof. <a href="http://sites.nlsde.buaa.edu.cn/~liwei">Wei Li</a>, and visited DVMM Lab, Columbia University as a joint Ph.D student supervised by Prof. <a href="http://www.ee.columbia.edu/~sfchang">Shih-Fu Chang</a>. My research interests include fast visual computing (e.g., large-scale search/understanding) and robust deep learning (e.g., network quantization, adversarial attack/defense, few shot learning). I received NSFC Excellent Young Scientists Fund, and was selected into 2019 Beijing Nova Program, MSRA StarTrack Program, and 2015 CCF Young Talents Development Program.
+		</p>
+
+		<p>
+			<a href="#publications">Selected Publications</a> | <a href="./highlights.html">Highlights</a> | <a href="./publication.html">All Publications</a> 
+		</p>
+		<p>
+<a href="./group.html">Our Group</a> | <a href="./hashing">Hashing Survey</a> | <a href="http://scholar.google.com/citations?user=8VY7ZDcAAAAJ&hl=en">Google Scholar</a> | <a href="http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/l/Liu:Xianglong.html">DBLP</a>
+		</p>
+		
+	</div>
+</div>
+
+
+<div id="news">
+                 <li><font color="red"><strong>NEW</strong></font>&nbsp;&nbsp;Jul 2021: Welcome to our ACM MM workshop on <a href="https://advm-workshop-2021.github.io/">Adversarial Learning for Multimedia</a> and IJCAI workshop on <a href="https://ssdl2021.github.io/">Safety & Security of Deep Learning</a>.</li>
+                 <li><font color="red"><strong>NEW</strong></font>&nbsp;&nbsp;Jul 2021: Tutorial on <a href="./file/Adverarial_Attack_0709.pdf">Adversarial Examples for Deep Learning: Attack, Defense and Robustness</a>, IEEE ICME 2021.</li>
+                 <li><font color="red"><strong>NEW</strong></font>&nbsp;&nbsp;May 2021: One paper about robust deep learning accepted by IEEE T-IP, and one paper about few-shot learning accepted by IEEE T-NNLS.</li>
+                 <li>Mar 2021: Two papers about network quantization and physical-world attack accepted by CVPR 2021 for oral presentation.</li>
+                 <li>Jan 2021: One paper about PointNet binarization accepted by ICLR 2021.</li>
+                 <li>Dec 2020: One paper about abstract visual reasoning accepted by AAAI 2021. We released <a href="https://github.com/husheng12345/SRAN">Impartial-RAVEN</a> for the fair evaluation of the abstract reasoning ability.</li> 
+                 <li>Dec 2020: We released our <a href="https://openi.org.cn/AISafety/">AISafety</a> project in OpenI platform and received the <a href="https://openi.org.cn/html/2020/dongtai_1202/487.html">Excellent Project Award</a></li> 
+<!-- ---------------------- 	                 <li>Jul 2020: One paper accepted by ACM MM 2020. We released <a href="https://github.com/OPIXray-author/OPIXray">OPIXray</a>: the first X-ray Security Inspection Benchmark for Occluded Prohibited Items Detection</li> 
+		<li>Jul 2020: Three papers about adversarial attack accepted by ECCV 2020. We successfully attacked real-world systems: <a href="https://mp.weixin.qq.com/s/yZQmuA2RQXIRdFx5uZIVWg">Embodied Agents</a> and <a href="https://mp.weixin.qq.com/s/nPB8zR8B6rzZ19CA856g6A">Automatic Check-out</a>.</li> 
+		<li>Apr 2020: Two papers about few-shot learning accepted by IJCAI 2020.</li>
+		<li>Apr 2020: Awarded 
+<a href="http://www.shaanxi.gov.cn/info/iList.jsp?tm_id=168&cat_id=14715&info_id=166263&from=groupmessage&isappinstalled=0">First Prize of Shannxi Natural Science Awards.</a></li> 		
+		<li>Feb 2020: Five papers mainly about network quantization accepted by IEEE CVPR 2020. </li> 
+	<li><font color="red"><strong>NEW</strong></font>&nbsp;&nbsp;Feb 2020: Two papers accepted by IEEE TMM, and two papers accepted by Pattern Recognition, including one survey paper on binary neural networks <a href="https://github.com/htqin/awesome-model-quantization">Project</a>.</li>
+		<li>Jul 2019: Two papers accepted by IEEE ICCV 2019.</li> 
+		<li>Mar 2019: Special Issue "<a href="https://www.journals.elsevier.com/pattern-recognition/call-for-papers/call-for-paper-on-special-issue-on-explainable-deep-learning">Explainable Deep Learning for Efficient and Robust Pattern Recognition</a>" in Pattern Recognition (submission deadline: 15 July, 2019).</li>   
+		<li><font color="red"><strong>NEW</strong></font>&nbsp;&nbsp;Sep 2018: <a href="http://www.pcm2018.org/Awards.html">Our paper received the best student paper award in PCM 2018.</a></li>   
+<li><font color="red"><strong>NEW</strong></font>&nbsp;&nbsp;Apr 2018: Special Issue "<a href="https://jivp-eurasipjournals.springeropen.com/bvd?from=timeline&isappinstalled=0">Modeling and Representation for Big Visual Data</a>" in EURASIP Journal on Image and Video Processing (submission deadline: 30 Oct, 2018).</li>   
+ 
+		<li>CFP: Special Issue "<a href="https://www.hindawi.com/journals/am/si/506156/cfp/">Learning Binary Representation for Computer Vision Applications</a>" in Advances in Multimedia .</li>  
+		<li>Two papers accepted by AAAI 2017.</li>   	        
+		<li>Organized and chaired the special session "<a href="http://www.icimcs2016.org/index.php/site/singlePage/7">Hashing and its Applications in Big Data</a>" in ICIMCS 2016, Xi'an, China.		  	
+		<li>One paper accepted by CVPR 2016, and one paper accepted by ECAI 2016.</li>    
+		<li>Selected into the first <a href="http://www.ccf.org.cn/sites/ccf/xhdtnry.jsp?contentId=2900627794416">China Computer Federation Young Talents Development Program</a>.</li>
+		<li>Awarded 2015 <a href="http://www.ccf.org.cn/sites/ccf/xhdtnry.jsp?contentId=2903940691550">China Computer Federation Outstanding Doctoral Dissertation</a>.</li>
+		<li>One paper accepted by ICCV 2015, and one paper accepted by IEEE TIP.</li>		
+		<li>Organized and chaired the special session "<a href="http://pcm2015.gist.ac.kr/program">Visual Understanding and Recognition on Big Data</a>" in PCM 2015, Gwangju, Korea.
+		</li> ---->
+
+</div>
+
+<hr/>
+<!-- ---------------------- Publications ---------------->
+
+<div id="publications">
+	<h3>Selected Papers<a name="publications"></a> | <a href="./highlights.html"><font color="grey">Highlights</font></a> | <a href="./publication.html"><font color="grey">All Publications</font></a> 
+</h3>
+
+      <div class="paper" id="Wang:cvpr21">
+		<div class="pimg"><img src="./image/dasa.png"></div>
+		<div class="ptitle">Dual Attention Suppression Attack: Generate Adversarial Camouflage in Physical World</div>
+		<div class="pauthors">Jiakai Wang, Aishan Liu, Zixin Yin, Shunchang Liu, Shiyu Tang, Xianglong Liu*</div>
+		<div class="pvenue">IEEE CVPR (oral), 2021</div>
+		<div class="plinks">
+			<div class="plink"><a href="https://">PDF</a></div>	
+			<div class="plink"><a href="https://github.com/">Code</a></div>		
+<div class="plink"><a class="togglebib" href="javascript:togglebib('Wang:cvpr21')" shape="rect">bibtex</a></div>
+
+<pre class="bib" style="display: none" xml:space="preserve">
+@inproceedings{Wang:cvpr21,
+  author    = {Jiakai Wang and Aishan Liu and Zixin Yin and Shunchang Liu and Shiyu Tang and Xianglong Liu},
+  title     = {Dual Attention Suppression Attack: Generate Adversarial Camouflage in Physical World},
+  booktitle = {IEEE CVPR},
+  year      = {2021},
+  } </pre>
+		</div>
+	</div>
+
+
+      <div class="paper" id="Zhang:cvpr21">
+		<div class="pimg"><img src="./image/dsg.png"></div>
+		<div class="ptitle">Diversifying Sample Generation for Accurate Data-Free Quantization</div>
+		<div class="pauthors">Xiangguo Zhang, Haotong Qin, Yifu Ding, Ruihao Gong, Qinghua Yan, Renshuai Tao, Yuhang Li, Fengwei Yu, Xianglong Liu*</div>
+		<div class="pvenue">IEEE CVPR (oral), 2021</div>
+		<div class="plinks">
+			<div class="plink"><a href="https://">PDF</a></div>	
+			<div class="plink"><a href="https://github.com/">Code</a></div>		
+<div class="plink"><a class="togglebib" href="javascript:togglebib('Zhang:cvpr21')" shape="rect">bibtex</a></div>
+
+<pre class="bib" style="display: none" xml:space="preserve">
+@inproceedings{Zhang:cvpr21,
+  author    = {Xiangguo Zhang and Haotong Qin and Yifu Ding and Ruihao Gong and Qinghua Yan and Renshuai Tao and Yuhang Li and Fengwei Yu and Xianglong Liu},
+  title     = {Diversifying Sample Generation for Accurate Data-Free Quantization},
+  booktitle = {IEEE CVPR},
+  year      = {2021},
+  } </pre>
+		</div>
+	</div>
+
+
+	<div class="paper" id="Qin:iclr21">
+		<div class="pimg"><img src="./image/bipointnet.png"></div>
+		<div class="ptitle">BiPointNet: Binary Neural Network for Point Clouds</div>
+		<div class="pauthors">Haotong Qin, Zhongang Cai, Mingyuan Zhang, Yifu Ding, Haiyu Zhao, Shuai Yi, Xianglong Liu*, Hao Su</div>
+		<div class="pvenue">ICLR, 2021</div>
+		<div class="plinks">
+			<div class="plink"><a href="https://openreview.net/forum?id=9QLRCVysdlO">PDF</a></div>	
+			<div class="plink"><a href="https://github.com/htqin/BiPointNet">Code</a></div>		
+<div class="plink"><a class="togglebib" href="javascript:togglebib('Qin:iclr21')" shape="rect">bibtex</a></div>
+
+<pre class="bib" style="display: none" xml:space="preserve">
+@inproceedings{Qin:iclr21,
+  author    = {Haotong Qin and Zhongang Cai and Mingyuan Zhang and Yifu Ding and Haiyu Zhao and Shuai Yi and Xianglong Liu* and Hao Su},
+  title     = {BiPointNet: Binary Neural Network for Point Clouds},
+  booktitle = {ICLR},
+  year      = {2021},
+  } </pre>
+		</div>
+	</div>
+
+
+
+	<div class="paper" id="Liu:eccv20_bias">
+  		<div class="pimg"><img src="./image/buapa.png"></div>
+  		<div class="ptitle">Bias-based Universal Adversarial Patch Attack for Automatic Check-out</div>
+ 		 <div class="pauthors">Aishan Liu, Jiakai Wang, Xianglong Liu*, Bowen Cao, Chongzhi Zhang, Hang Yu.</div>
+  		<div class="pvenue">ECCV, 2020</div>
+ 		 <div class="plinks">
+ 			  <div class="plink"><a href="https://arxiv.org/pdf/2005.09161.pdf">PDF</a></div>
+ 			  <div class="plink"><a href="https://github.com/liuaishan/SpatiotemporalAttack">Code</a></div>
+		<div class="plink"><a class="togglebib" href="javascript:togglebib('Liu:eccv20_bias')" shape="rect">bibtex</a></div>
+
+<pre class="bib" style="display: none" xml:space="preserve">
+@inproceedings{Liu:eccv20_bias,
+  author    = {Aishan Liu and Jiakai Wang and Xianglong Liu and Bowen Cao and Chongzhi Zhang and Hang Yu},
+  title     = {Bias-based Universal Adversarial Patch Attack for Automatic Check-out},
+  booktitle = {ECCV},
+  year      = {2020},
+  } </pre>
+ 		 </div>
+	 </div>
+ 
+		 <div class="paper" id="Liu:eccv20_spatiotemporal">
+ 			 <div class="pimg"><img src="./image/sta.png"></div>
+  			 <div class="ptitle">Spatiotemporal Attacks for Embodied Agents</div>
+ 			 <div class="pauthors">Aishan Liu, Tairan Huang, Xianglong Liu, Yitao Xu, Yuqing Ma, Xinyun Chen, Stephen Maybank, Dacheng Tao</div>
+ 			 <div class="pvenue">ECCV, 2020</div>
+			  <div class="plinks">
+ 			  <div class="plink"><a href="https://arxiv.org/pdf/2005.09257.pdf">PDF</a></div>
+  			 <div class="plink"><a href="https://github.com/liuaishan/ModelBiasedAttack">Code</a></div>
+			<div class="plink"><a class="togglebib" href="javascript:togglebib('Liu:eccv20_spatiotemporal')" shape="rect">bibtex</a></div>
+
+<pre class="bib" style="display: none" xml:space="preserve">
+@inproceedings{Liu:eccv20_spatiotemporal,
+  author    = {Aishan Liu and Tairan Huang and Xianglong Liu and Yitao Xu and Yuqing Ma and Xinyun Chen and Stephen Maybank and Dacheng Tao},
+  title     = {Spatiotemporal Attacks for Embodied Agents},
+  booktitle = {ECCV},
+  year      = {2020},
+  } </pre>
+		  </div>
+ 	</div>
+
+
+	<div class="paper" id="Zhu:cvpr20">
+		<div class="pimg"><img src="./image/INT8.png"></div>
+		<div class="ptitle">Towards Unified INT8 Training for Convolutional Neural Network</div>
+		<div class="pauthors">Feng Zhu, Ruihao Gong, Fengwei Yu, Xianglong Liu*, Yanfei Wang, Zhelong Li, Xiuqi Yang, Junjie Yan</div>
+		<div class="pvenue">IEEE CVPR, 2020</div>
+		<div class="plinks">
+			<div class="plink"><a href="./file/cvpr20_int8.pdf">PDF</a></div>
+			<div class="plink"><a href="./file/cvpr20_int8_supp.pdf">Supplementary</a></div>
+<div class="plink"><a class="togglebib" href="javascript:togglebib('Zhu:cvpr20')" shape="rect">bibtex</a></div>
+
+<pre class="bib" style="display: none" xml:space="preserve">
+@inproceedings{Zhu:cvpr20,
+  author    = {Feng Zhu and Ruihao Gong and Fengwei Yu and Xianglong Liu and Yanfei Wang and Zhelong Li and Xiuqi Yang and Junjie Yan},
+  title     = {Towards Unified INT8 Training for Convolutional Neural Network},
+  booktitle = {IEEE CVPR},
+  year      = {2020},
+  } </pre>
+		</div>
+	</div>
+
+	<div class="paper" id="Qin:cvpr20">
+		<div class="pimg"><img src="./image/IRNet.png"></div>
+		<div class="ptitle">Forward and Backward Information Retention for Accurate Binary Neural Networks</div>
+		<div class="pauthors">Haotong Qin, Ruihao Gong, Xianglong Liu*, Mingzhu Shen, Ziran Wei, Fengwei Yu, Jingkuan Song</div>
+		<div class="pvenue">IEEE CVPR, 2020</div>
+		<div class="plinks">
+			<div class="plink"><a href="./file/cvpr20_irnet.pdf">PDF</a></div>
+			<div class="plink"><a href="https://github.com/htqin/IR-Net">Code</a></div>
+<div class="plink"><a class="togglebib" href="javascript:togglebib('Qin:cvpr20')" shape="rect">bibtex</a></div>
+
+<pre class="bib" style="display: none" xml:space="preserve">
+@inproceedings{Qin:cvpr20,
+  author    = {Haotong Qin and Ruihao Gong and Xianglong Liu and Mingzhu Shen and Ziran Wei and Fengwei Yu and Jingkuan Song},
+  title     = {Forward and Backward Information Retention for Accurate Binary Neural Networks},
+  booktitle = {IEEE CVPR},
+  year      = {2020},
+  } </pre>
+		</div>
+	</div>
+
+
+
+
+		 <div class="paper" id="Ma:ijcai20-ipn">
+ 		 <div class="pimg"><img src="./image/ipn.png"></div>
+		  <div class="ptitle">Few-shot Visual Learning with Contextual Memory and Fine-grained Calibration</div>
+ 		 <div class="pauthors">Yuqing Ma, Wei Liu, Shihao Bai, Qingyu Zhang, Aishan Liu, Weimin Chen, Xianglong Liu*</div>
+ 		 <div class="pvenue">IJCAI, 2020</div>
+ 		 <div class="plinks">
+ 			  <div class="plink"><a href="https://www.ijcai.org/Proceedings/2020/0113.pdf">PDF</a></div>
+  			 <div class="plink"><a href="https://github.com/vickyFox/IPN">Code</a></div>
+			<div class="plink"><a class="togglebib" href="javascript:togglebib('Ma:ijcai20-ipn')" shape="rect">bibtex</a></div>
+
+<pre class="bib" style="display: none" xml:space="preserve">
+@inproceedings{Ma:ijcai20-ipn,
+  author    = {Yuqing Ma and Wei Liu and Shihao Bai and Qingyu Zhang and Aishan Liu and Weimin Chen and Xianglong Liu},
+  title     = {Few-shot Visual Learning with Contextual Memory and Fine-grained Calibration},
+  booktitle = {IJCAI},
+  year      = {2020},
+  } </pre>
+ 		 </div>
+ 	</div>
+
+
+ 		<div class="paper" id="Ma:ijcai20-trpn">
+ 		 <div class="pimg"><img src="./image/trpn.png"></div>
+ 		 <div class="ptitle">Transductive Relation-Propagation Network for Few-shot Learning</div>
+ 		 <div class="pauthors">Yuqing Ma, Shihao Bai, Shan An, Wei Liu, Aishan Liu, Xiantong Zhen, Xianglong Liu*</div>
+ 		 <div class="pvenue">IJCAI, 2020</div>
+ 		 <div class="plinks">
+ 			  <div class="plink"><a href="https://www.ijcai.org/Proceedings/2020/0112.pdf">PDF</a></div>
+  		 	<div class="plink"><a href="https://github.com/vickyFox/TRPN">Code</a></div>
+			<div class="plink"><a class="togglebib" href="javascript:togglebib('Ma:ijcai20-trpn')" shape="rect">bibtex</a></div>
+
+<pre class="bib" style="display: none" xml:space="preserve">
+@inproceedings{Ma:ijcai20-trpn,
+  author    = {Yuqing Ma and Shihao Bai and Shan An and Wei Liu and Aishan Liu and Xiantong Zhen and Xianglong Liu},
+  title     = {Transductive Relation-Propagation Network for Few-shot Learning},
+  booktitle = {IJCAI},
+  year      = {2020},
+  } </pre>
+  		</div>
+ 	</div>
+
+
+	<div class="paper" id="Gong:iccv19">
+		<div class="pimg"><img src="./image/dsq.png"></div>
+		<div class="ptitle">Differentiable Soft Quantization: Bridging Full-Precision and Low-Bit Neural Networks</div>
+		<div class="pauthors">Ruihao Gong, Xianglong Liu*, Shenghu Jiang, Tianxiang Li, Peng Hu, Jiazhen Lin, Fengwei Yu, Junjie Yan</div>
+		<div class="pvenue">IEEE ICCV, 2019</div>
+		<div class="plinks">
+			<div class="plink"><a href="./file/iccv19.pdf">PDF</a></div>
+			<div class="plink"><a href="./file/iccv19_supp.pdf">Supplementary</a></div>
+<div class="plink"><a class="togglebib" href="javascript:togglebib('Gong:iccv19')" shape="rect">bibtex</a></div>
+
+<pre class="bib" style="display: none" xml:space="preserve">
+@inproceedings{Gong:iccv19,
+  author    = {Ruihao Gong and Xianglong Liu and  Shenghu Jiang and Tianxiang Li and Peng Hu and Jiazhen Lin and Fengwei Yu and Junjie Yan},
+  title     = {Differentiable Soft Quantization: Bridging Full-Precision and Low-Bit Neural Networks},
+  booktitle = {IEEE ICCV},
+  year      = {2019},
+  } </pre>
+		</div>
+	</div>
+
+
+	<div class="paper" id="Ma:ijcai19">
+		<div class="pimg"><img src="./image/inpaint.png"></div>
+		<div class="ptitle">Coarse-to-Fine Image Inpainting via Region-wise Convolutions and Non-Local Correlation</div>
+		<div class="pauthors">Yuqing Ma, Xianglong Liu*, Shihao Bai, Lei Wang, Dailan He, Aishan Liu</div>
+		<div class="pvenue">IJCAI, 2019</div>
+		<div class="plinks">
+			<div class="plink"><a href="./file/ijcai19.pdf">PDF</a></div>
+			<div class="plink"><a href="./file/ijcai_supp.pdf">Supplementary</a></div>
+<div class="plink"><a class="togglebib" href="javascript:togglebib('Ma:ijcai19')" shape="rect">bibtex</a></div>
+
+<pre class="bib" style="display: none" xml:space="preserve">
+@inproceedings{Ma:ijcai19,
+  author    = {Yuqing Ma and Xianglong Liu and Shihao Bai and Lei Wang and Dailan He and Aishan Liu},
+  title     = {Coarse-to-Fine Image Inpainting via Region-wise Convolutions and Non-Local Correlation},
+  booktitle = {IJCAI},
+  year      = {2019},
+  } </pre>
+		</div>
+	</div>
+
+	<div class="paper" id="Liu:aaai19">
+		<div class="pimg"><img src="./image/psgan.jpg"></div>
+		<div class="ptitle">Perceptual-Sensitive GAN for Generating Adversarial Patches</div>
+		<div class="pauthors">Aishan Liu, Xianglong Liu*, Jiaxin Fan, Yuqing Ma, Anlan Zhang, Huiyuan Xie, Dacheng Tao</div>
+		<div class="pvenue">AAAI, 2019</div>
+		<div class="plinks">
+			<div class="plink"><a href="./file/aaai19.pdf">PDF</a></div>
+			<div class="plink"><a href="./file/aaai19_supp.pdf">Supplementary</a></div>
+<div class="plink"><a class="togglebib" href="javascript:togglebib('Liu:aaai19')" shape="rect">bibtex</a></div>
+
+<pre class="bib" style="display: none" xml:space="preserve">
+@inproceedings{Liu:aaai19,
+  author    = {Aishan Liu and Xianglong Liu and Jiaxin Fan and Yuqing Ma and Anlan Zhang and Huiyuan Xie and Dacheng Tao},
+  title     = {Perceptual-Sensitive GAN for Generating Adversarial Patches},
+  booktitle = {AAAI},
+  year      = {2019},
+  } </pre>
+		</div>
+	</div>
+
+
+	<div class="paper" id="Ma:ijcai18">
+		<div class="pimg"><img src="./image/pgh.jpg"></div>
+		<div class="ptitle">Progressive Generative Hashing for Image Retrieval</div>
+		<div class="pauthors">Yuqing Ma, Yue He, Fan Ding, Sheng Hu, Jun Li, Xianglong Liu* </div>
+		<div class="pvenue">IJCAI, 2018</div>
+		<div class="plinks">
+			<div class="plink"><a href="./file/ijcai18a.pdf">PDF</a></div>
+			<div class="plink"><a href="./file/ijcai18a_slides.pdf">Slides</a></div>
+<div class="plink"><a class="togglebib" href="javascript:togglebib('Ma:ijcai18')" shape="rect">bibtex</a></div>
+
+<pre class="bib" style="display: none" xml:space="preserve">
+@inproceedings{Ma:ijcai18,
+  author    = {Yuqing Ma and Yue He and Fan Ding and Sheng Hu and Jun Li and Xianglong Liu},
+  title     = {Progressive Generative Hashing for Image Retrieval},
+  booktitle = {IJCAI},
+  year      = {2018},
+  } </pre>
+		</div>
+	</div>
+
+	<div class="paper" id="Fu:ijcai18">
+		<div class="pimg"><img src="./image/cbq.jpg"></div>
+		<div class="ptitle">Complementary Binary Quantization for Joint Multiple Indexing</div>
+		<div class="pauthors">Qiang Fu, Xu Han, Xianglong Liu*, Jingkuan Song, Cheng Deng</div>
+		<div class="pvenue">IJCAI, 2018</div>
+		<div class="plinks">
+			<div class="plink"><a href="./file/ijcai18b.pdf">PDF</a></div>
+			<div class="plink"><a href="./file/ijcai18b_slides.pdf">Slides</a></div>
+<div class="plink"><a class="togglebib" href="javascript:togglebib('Fu:ijcai18')" shape="rect">bibtex</a></div>
+
+<pre class="bib" style="display: none" xml:space="preserve">
+@inproceedings{Fu:ijcai18,
+  author    = {Qiang Fu and Xu Han and Xianglong Liu and Jingkuan Song and Cheng Deng},
+  title     = {Complementary Binary Quantization for Joint Multiple Indexing},
+  booktitle = {IJCAI},
+  year      = {2018},
+  } </pre>
+		</div>
+	</div>
+
+
+	<div class="paper" id="Huang:aaai18">
+		<div class="pimg"><img src="./image/own.jpg"></div>
+		<div class="ptitle">Orthogonal Weight Normalization: Solution to Optimization over Multiple Dependent Stiefel Manifolds in Deep Neural Networks</div>
+		<div class="pauthors">Lei Huang, Xianglong Liu, Bo Lang, Adams Wei Yu, Bo Li</div>
+		<div class="pvenue">AAAI, 2018</div>
+		<div class="plinks">
+			<div class="plink"><a href="https://arxiv.org/abs/1709.06079">PDF</a></div>
+			<div class="plink"><a href="https://github.com/huangleiBuaa/OthogonalWN">Code</a></div>
+<div class="plink"><a class="togglebib" href="javascript:togglebib('Huang:aaai18')" shape="rect">bibtex</a></div>
+
+<pre class="bib" style="display: none" xml:space="preserve">
+@inproceedings{Huang:aaai18,
+  author    = {Lei Huang and Xianglong Liu and Bo Adams Wei Yu ang Bo Li},
+  title     = {Orthogonal Weight Normalization: Solution to Optimization over Multiple Dependent Stiefel Manifolds in Deep Neural Networks},
+  booktitle = {Proceedings of the AAAI Conference on Artificial Intelligence},
+  year      = {2018},
+  } </pre>
+		</div>
+	</div>
+
+
+
+	<div class="paper" id="Huang:iccv17">
+		<div class="pimg"><img src="./image/iccv2017.jpg"></div>
+		<div class="ptitle">Centered Weight Normalization in Accelerating Training of Deep Neural Networks</div>
+		<div class="pauthors">Lei Huang, Xianglong Liu*, Yang Liu, Bo Lang, Dacheng Tao</div>
+		<div class="pvenue">IEEE ICCV, 2017</div>
+		<div class="plinks">
+			<div class="plink"><a href="./file/iccv2017.pdf">PDF</a></div>
+			<div class="plink"><a href="./file/iccv2017_supp.pdf">Supplementary</a></div>
+			<div class="plink"><a href="https://github.com/huangleiBuaa/CenteredWN">Code</a></div>
+			<div class="plink"><a class="togglebib" href="javascript:togglebib('Huang:iccv17')" shape="rect">bibtex</a></div>
+
+<pre class="bib" style="display: none" xml:space="preserve">
+@inproceedings{Huang:iccv17,
+  author    = {Lei Huang and Xianglong Liu and Yang Liu and Bo Lang and Dacheng Tao},
+  title     = {Centered Weight Normalization in Accelerating Training of Deep Neural Networks},
+  booktitle = {IEEE International Conference on Computer Vision},
+  year      = {2017},
+  }  </pre>
+		</div>
+	</div>
+
+
+
+
+	<div class="paper" id="Liu:aaai17">
+		<div class="pimg"><img src="./image/aaai2017.jpg"></div>
+		<div class="ptitle">Boosting Complementary Hash Tables for Fast Nearest Neighbor Search</div>
+		<div class="pauthors">Xianglong Liu, Cheng Deng, Yadong Mu, Zhujin Li</div>
+		<div class="pvenue">AAAI, 2017</div>
+		<div class="plinks">
+			<div class="plink"><a href="./file/aaai2017.pdf">PDF</a></div>
+			<div class="plink"><a href="./file/aaai_slides.pdf">Slides</a></div>
+			<div class="plink"><a class="togglebib" href="javascript:togglebib('Liu:aaai17')" shape="rect">bibtex</a></div>
+
+<pre class="bib" style="display: none" xml:space="preserve">
+@inproceedings{Liu:aaai17,
+  author    = {Xianglong Liu and Cheng Deng and Yadong Mu and Zhujin Li},
+  title     = {Boosting Complementary Hash Tables for Fast Nearest Neighbor Search},
+  booktitle = {Proceedings of the Thirty-First AAAI Conference on Artificial Intelligence},
+  pages     = {4183--4189},
+  year      = {2017},
+  }</pre>
+
+		</div>
+	</div>
+
+
+
+	<div class="paper" id="Liu:cvpr16">
+		<div class="pimg"><img src="./image/cvpr2016.jpg"></div>
+		<div class="ptitle">Multilinear Hyperplane Hashing</div>
+		<div class="pauthors">Xianglong Liu, Xinjie Fan, Cheng Deng, Zhujin Li, Hao Su, Dacheng Tao</div>
+		<div class="pvenue">IEEE CVPR (<font color="#FF0000">Young Researcher Support</font>), 2016</div>
+		<div class="plinks">
+			<div class="plink"><a href="./file/cvpr2016.pdf">PDF</a></div>			<div class="plink"><a class="togglebib" href="javascript:togglebib('Liu:cvpr16')" shape="rect">bibtex</a></div>
+
+<pre class="bib" style="display: none" xml:space="preserve">
+@InProceedings{Liu:cvpr16,
+author = {Liu, Xianglong and Fan, Xinjie and Deng, Cheng and Li, Zhujin and Su, Hao and Tao, Dacheng},
+title = {Multilinear Hyperplane Hashing},
+booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition},
+year = {2016},
+pages     = {5119--5127},
+}</pre>
+		</div>
+	</div>
+
+
+
+	<div class="paper" id="Liu:iccv15">
+		<div class="pimg"><img src="./image/iccv2015.jpg"></div>
+		<div class="ptitle">Multi-View Complementary Hash Tables for Nearest Neighbor Search</div>
+		<div class="pauthors">Xianglong Liu, Lei Huang, Cheng Deng, Jiwen Lu, Bo Lang</div>
+		<div class="pvenue">IEEE ICCV, 2015</div>
+		
+		<div class="plinks">
+			<div class="plink"><a href="./file/iccv2015.pdf">PDF</a></div>
+			<div class="plink"><a href="./file/iccv2015_poster.pdf">Poster</a></div>
+			<!--<div class="plink"><a href="http://arxiv.org/pdf/1412.0003v1">PDF</a></div>-->
+			<div class="plink"><a href="./file/iccv2015_spotlight.mp4">Spotlight</a></div>	
+			<div class="plink"><a class="togglebib" href="javascript:togglebib('Liu:iccv15')" shape="rect">bibtex</a></div>
+
+<pre class="bib" style="display: none" xml:space="preserve">
+@inproceedings{Liu:iccv15,
+  author    = {Xianglong Liu and Lei Huang and Cheng Deng and Jiwen Lu and Bo Lang},
+  title     = {Multi-View Complementary Hash Tables for Nearest Neighbor Search},
+  booktitle = {IEEE International Conference on Computer Vision},
+  pages     = {1107--1115},
+  year      = {2015},
+}</pre>
+
+		</div>
+	</div>
+
+
+	<div class="paper" id="Liu:cvpr14">
+		<div class="pimg"><img src="./image/cvpr2014.jpg"></div>
+		<div class="ptitle">Collaborative Hashing</div>
+		<div class="pauthors">Xianglong Liu, Junfeng He, Cheng Deng, Bo Lang</div>
+		<div class="pvenue">IEEE CVPR (<font color="#FF0000">Young Researcher Support</font>), 2014</div>
+		<div class="plinks">
+			<div class="plink"><a href="./file/cvpr2014.pdf">PDF</a></div>
+			<div class="plink"><a href="./file/cvpr2014_poster.pdf">Poster</a></div>			
+			<div class="plink"><a href="./file/cvpr2014.mp4">Spotlight</a></div>
+			<div class="plink"><a href="./file/CH.zip"><font color="#FF0000">Code</font></a><span lang=EN-US style='font-size:10.0pt;font-family:Verdana;color:#0066CC'><img border=0 width=28 height=11 id="Img1"  src="./image/new.gif"></span></div>
+			<div class="plink"><a class="togglebib" href="javascript:togglebib('Liu:cvpr14')" shape="rect">bibtex</a></div>
+
+<pre class="bib" style="display: none" xml:space="preserve">
+@inproceedings{Liu:2014:cvpr,
+  author    = {Xianglong Liu and Junfeng He and Cheng Deng and Bo Lang},
+  title     = {Collaborative Hashing},
+  booktitle = {IEEE Conference on Computer Vision and Pattern Recognition},
+  pages     = {2147--2154},
+  year      = {2014},
+}</pre>
+
+		</div>
+	</div>
+
+
+	<div class="paper" id="Liu:cvpr13">
+		<div class="pimg"><img src="./image/cvpr2013.jpg"></div>
+		<div class="ptitle">Hash Bit Selection: a Unified Solution for Selection Problems in Hashing</div>
+		<div class="pauthors">Xianglong Liu, Junfeng He, Bo Lang, Shih-Fu Chang</div>
+		<div class="pvenue">IEEE CVPR, 2013.</div>
+		<div class="plinks">
+			<div class="plink"><a href="./file/cvpr2013.pdf">PDF</a></div>
+			<div class="plink"><a href="./file/cvpr2013_supp.pdf">Supplementary</a></div>
+			<div class="plink"><a href="./file/cvpr2013_slides.pdf">Slides (in chinese)</a></div>
+			<div class="plink"><a href="./file/cvpr2013_poster.pdf">Poster</a></div>
+			<div class="plink"><a href="./file/bitselect.zip"><font color="#FF0000">Code</font></a><span lang=EN-US style='font-size:10.0pt;font-family:Verdana;color:#0066CC'><img border=0 width=28 height=11 id="Img1"  src="./image/new.gif"></span></div>	
+			<div class="plink"><a class="togglebib" href="javascript:togglebib('Liu:cvpr13')" shape="rect">bibtex</a></div>
+
+<pre class="bib" style="display: none" xml:space="preserve">
+@inproceedings{Liu:cvpr13,
+  author    = {Xianglong Liu and Junfeng He and Bo Lang and Shih{-}Fu Chang},
+  title     = {Hash Bit Selection: A Unified Solution for Selection Problems in Hashing},
+  booktitle = {IEEE Conference on Computer Vision and Pattern Recognition},
+  pages     = {1570--1577},
+  year      = {2013},
+}</pre>		
+		</div>
+<div class="pvenue"><font color="#FF0000">Journal</font>: Hash Bit Selection for Nearest Neighbor Search. IEEE TIP, 2017. <a href="./tip2017a.bib">bibtex</a></div>
+	</div>
+
+<!--
+
+
+
+
+	<div class="paper" id="Wang:pcm18">
+		<div class="pimg"><img src="./image/rap.jpg"></div>
+		<div class="ptitle">Random Angular Projection for Fast Nearest Subspace Search</div>
+		<div class="pauthors">Binshuai Wang, Xianglong Liu*, Ke Xia, Kotagiri Ramamohanarao, Dacheng Tao </div>
+		<div class="pvenue">PCM (<font color="#FF0000">Best Student Paper</font>), 2018</div>
+		<div class="plinks">
+			<div class="plink"><a href="./file/pcm18.pdf">PDF</a></div>
+			<div class="plink"><a href="./file/pcm18_supp.pdf">Supplementary</a></div>
+<div class="plink"><a class="togglebib" href="javascript:togglebib('Wang:pcm18')" shape="rect">bibtex</a></div>
+
+<pre class="bib" style="display: none" xml:space="preserve">
+@inproceedings{Wang:pcm18,
+  author    = {Binshuai Wang and Xianglong Liu and Ke Xia and Kotagiri Ramamohanarao and Dacheng Tao},
+  title     = {Random Angular Projection for Fast Nearest Subspace Search},
+  booktitle = {Advances in Multimedia Information Processing (PCM)},
+  pages     = {15--26},
+  year      = {2018},
+  } </pre>
+		</div>
+	</div>
+
+
+
+	<div class="paper" id="Li:ecai16">
+		<div class="pimg"><img src="./image/ecai2016.jpg"></div>
+		<div class="ptitle">Adaptive Binary Quantization for Fast Nearest Neighbor Search</div>
+		<div class="pauthors">Zhujin Li, Xianglong Liu*, Junjie Wu, Hao Su</div>
+		<div class="pvenue">ECAI, 2016</div>
+		<div class="plinks">
+			<div class="plink"><a href="./file/ecai2016.pdf">PDF</a></div>
+			<div class="plink"><a href="./file/ECAI2016_slides.pdf">Slides</a></div>
+			<div class="plink"><a href="./file/ABQ.zip"><font color="#FF0000">Code</font></a><span lang=EN-US style='font-size:10.0pt;font-			family:Verdana;color:#0066CC'><img border=0 width=28 height=11 id="Img1"  src="./image/new.gif"></span></div>
+			<div class="plink"><a class="togglebib" href="javascript:togglebib('Li:ecai16')" shape="rect">bibtex</a></div>
+
+<pre class="bib" style="display: none" xml:space="preserve">
+@inproceedings{Li:ecai16,
+  author    = {Zhujin Li and Xianglong Liu and Junjie Wu and Hao Su},
+  title     = {Adaptive Binary Quantization for Fast Nearest Neighbor Search},
+  booktitle = {22nd European Conference on Artificial Intelligence},
+  pages     = {64--72},
+  year      = {2016},
+}</pre>
+
+		</div>
+	</div>
+
+	<div class="paper" id="Liu:aaai13">
+		<div class="pimg"><img src="./image/aaai2013.jpg"></div>
+		<div class="ptitle">Reciprocal Hash Tables for Nearest Neighbor Search</div>		
+		<div class="pauthors">Xianglong Liu, Junfeng He, Bo Lang</div>
+		<div class="pvenue">AAAI, 2013</div>
+		<div class="plinks">
+			<div class="plink"><a href="./file/aaai13_cr.pdf">PDF</a></div>
+			<div class="plink"><a href="./file/aaai13_poster.pdf">Poster</a></div>	
+			<div class="plink"><a class="togglebib" href="javascript:togglebib('Liu:aaai13')" shape="rect">bibtex</a></div>
+
+<pre class="bib" style="display: none" xml:space="preserve">
+@inproceedings{Liu:aaai13,
+  author    = {Xianglong Liu and Junfeng He and Bo Lang},
+  title     = {Reciprocal Hash Tables for Nearest Neighbor Search},
+  booktitle = {Proceedings of the Twenty-Seventh {AAAI} Conference on Artificial Intelligence},
+  year      = {2013},
+  pages     = {626--632},
+}</pre>	
+		</div>
+		<div class="pvenue"><font color="#FF0000">Journal</font>: Query-Adaptive Reciprocal Hash Tables for Nearest Neighbor Search. IEEE TIP, 2016. <a href="./tip2016a.bib">bibtex</a></div>
+	</div>
+
+<div class="paper" id="He:cvpr12">
+		<div class="pimg"><img src="./image/cvpr2012.jpg"></div>
+		<div class="ptitle">Mobile Product Search with Bag of Hash Bits and Boundary Reranking</div>
+		<div class="pauthors">Junfeng He, Jinyuan Feng, Xianglong Liu, Tao Cheng, Tai-Hsu Lin, Hyunjin Chung, Shih-Fu Chang</div>
+		<div class="pvenue">IEEE CVPR, 2012.</div>
+		<div class="plinks">
+			<div class="plink"><a href="http://www.ee.columbia.edu/ln/dvmm/publications/12/CVPR_MPS.pdf">PDF</a></div>
+			<div class="plink"><a href="./file/cvpr2012.mp4">Video</a></div>
+			<div class="plink"><a class="togglebib" href="javascript:togglebib('He:cvpr12')" shape="rect">bibtex</a></div>
+
+<pre class="bib" style="display: none" xml:space="preserve">
+@inproceedings{He:cvpr12,
+  author    = {Junfeng He and Jinyuan Feng and Xianglong Liu and Tao Cheng and Tai{-}Hsu Lin and Hyunjin Chung and Shih{-}Fu Chang},
+  title     = {Mobile product search with Bag of Hash Bits and boundary reranking},
+  booktitle = {IEEE Conference on Computer Vision and Pattern Recognition},
+  pages     = {3005--3012},
+  year      = {2012},
+}</pre>	
+		</div>
+	</div>
+
+
+<!-- 
+
+
+	<div class="paper" id="Xia:mm17">
+		<div class="pimg"><img src="./image/mm2017.jpg"></div>
+		<div class="ptitle">Temporal Binary Coding for Large-Scale Video Search</div>
+		<div class="pauthors">Ke Xia, Yuqing Ma, Xianglong Liu*, Yadong Mu, Li Liu</div>
+		<div class="pvenue">ACM MM, 2017</div>
+		<div class="plinks">
+			<div class="plink"><a href="./file/mm2017.pdf">PDF</a></div>
+			<div class="plink"><a href="./file/mm_poster.pdf">Poster</a></div>
+			<div class="plink"><a class="togglebib" href="javascript:togglebib('Xia:mm17')" shape="rect">bibtex</a></div>
+
+<pre class="bib" style="display: none" xml:space="preserve">
+@inproceedings{Xia:mm17,
+  author    = {Ke Xia and Yuqing Ma and Xianglong Liu and Yadong Mu and Li Liu},
+  title     = {Temporal Binary Coding for Large-Scale Video Search},
+  booktitle = {ACM International Conference on Multimedia},
+  year      = {2017},
+  } </pre>
+
+		</div>
+	</div>
+
+	<div class="paper" id="Liu:tip16b">
+		<div class="pimg"><img src="./image/mm2014.jpg"></div>
+		<div class="ptitle">Query-Adaptive Hash Code Ranking for Fast Nearest Neighbor Search</div>
+		<div class="pauthors">Tianxu Ji, Xianglong Liu*, Cheng Deng, Lei Huang, Bo Lang</div>
+		<div class="pvenue">ACM MM (short paper), 2014</div>
+		<div class="plinks">
+			<div class="plink"><a href="./file/mm2014.pdf">PDF</a></div>
+			<div class="plink"><a href="./file/QRank.zip"><font color="#FF0000">Code</font></a><span lang=EN-US style='font-size:10.0pt;font-family:Verdana;color:#0066CC'><img border=0 width=28 height=11 id="Img1"  src="./image/new.gif"></span></div>				
+		</div>
+		<div class="pvenue"><font color="#FF0000">Journal</font>: Query-Adaptive Hash Code Ranking for Large-Scale Multi-View Visual Search. IEEE TIP, 2016. <a class="togglebib" href="javascript:togglebib('Liu:tip16b')" shape="rect">bibtex</a></div>
+
+<pre class="bib" style="display: none" xml:space="preserve">
+@article{Liu:tip16b,
+  author    = {Xianglong Liu and Lei Huang and Cheng Deng and Bo Lang and Dacheng Tao},
+  title     = {Query-Adaptive Hash Code Ranking for Large-Scale Multi-View Visual Search},
+  journal   = {IEEE Trans. Image Processing},
+  volume    = {25},
+  number    = {10},
+  pages     = {4514--4524},
+  year      = {2016},
+}</pre>		
+	</div>
+
+
+	<div class="paper" id="Liu:pr14">
+		<div class="pimg"><img src="./image/mm2012.jpg"></div>
+		<div class="ptitle">Compact Kernel Hashing with Multiple Features</div>		
+		<div class="pauthors">Xianglong Liu, Junfeng He, Bo Lang.</div>
+		<div class="pvenue">ACM MM (short paper), 2012</div>
+		<div class="plinks">
+			<div class="plink"><a href="./file/mm12.pdf">PDF</a></div>
+			<div class="plink"><a href="./file/mm12_poster.pdf">Poster</a></div>	
+			<div class="plink"><a href="./file/mfkh.zip"><font color="#FF0000">Code</font></a><span lang=EN-US style='font-size:10.0pt;font-family:Verdana;color:#0066CC'><img border=0 width=28 height=11 id="Img1"  src="./image/new.gif"></span></div>	
+			<div class="plink"><a href="./mm2012.bib">bibtex</a></div>
+		</div>
+		<div class="pvenue"><font color="#FF0000">Journal</font>: Multiple Feature Kernel Hashing for Large-Scale Visual Search. PR, 2014. <a class="togglebib" href="javascript:togglebib('Liu:pr14')" shape="rect">bibtex</a></div>
+
+<pre class="bib" style="display: none" xml:space="preserve">
+@article{Liu:pr14,
+  author    = {Xianglong Liu and Junfeng He and Bo Lang},
+  title     = {Multiple feature kernel hashing for large-scale visual search},
+  journal   = {Pattern Recognition},
+  volume    = {47},
+  number    = {2},
+  pages     = {748--757},
+  year      = {2014},
+}</pre>
+	</div>
+
+
+	<div class="paper" id="Liu:tomm14">
+		<div class="pimg"><img src="./image/icmr2012.jpg"></div>
+		<div class="ptitle">Compact Hashing for Mixed Image-Keyword Query over Multi-Label Images</div>		
+		<div class="pauthors">Xianglong Liu, Yadong Mu, Bo Lang, Shih-Fu Chang</div>
+		<div class="pvenue">ACM ICMR (oral, 13.8%), 2012.</div>
+		<div class="plinks">
+			<div class="plink"><a href="./file/icmr2012.pdf">PDF</a></div>
+			<div class="plink"><a href="./file/icmr12.pptx">Slides</a></div>	
+			<div class="plink"><a href="./file/bsh.zip"><font color="#FF0000">Code</font></a><span lang=EN-US style='font-size:10.0pt;font-family:Verdana;color:#0066CC'><img border=0 width=28 height=11 id="Img1"  src="./image/new.gif"></span></div>	
+			<div class="plink"><a href="./file/icmr2012.bib">bibtex</a></div>
+		</div>
+
+		<div class="pvenue"><font color="#FF0000">Journal</font>: Mixed Image-Keyword Query Adaptive Hashing over Multi-Label Images. ACM TOMM, 2014. <a class="togglebib" href="javascript:togglebib('Liu:tomm14')" shape="rect">bibtex</a></div>
+
+<pre class="bib" style="display: none" xml:space="preserve">
+@article{Liu:2014:tomm,
+  author    = {Xianglong Liu and Yadong Mu and Bo Lang and Shih{-}Fu Chang},
+  title     = {Mixed image-keyword query adaptive hashing over multilabel images},
+  journal   = {ACM Transactions on Multimedia Computing Communications and Applications},
+  volume    = {10},
+  number    = {2},
+  pages     = {22},
+  year      = {2014},
+}</pre>	
+		
+	</div>
+->
+	
+	
+
+	<div class="paper" id="Deng:neuro15">
+		<div class="pimg"><img src="./image/neuro2015.jpg"></div>
+		<div class="ptitle">Adaptive Multi-Bit Quantization for Hashing</div>
+		<div class="pauthors">Cheng Deng, Huiru Deng, Xianglong Liu*, Yuan Yuan</div>
+		<div class="pvenue">Neurocomputing, 2015.</div>
+		<div class="plinks">
+			<div class="plink"><a href="./file/MBH.zip"><font color="#FF0000">Code</font></a><span lang=EN-US style='font-size:10.0pt;font-family:Verdana;color:#0066CC'><img border=0 width=28 height=11 id="Img1"  src="./image/new.gif"></span></div>	
+			<div class="plink"><a class="togglebib" href="javascript:togglebib('Deng:neuro15')" shape="rect">bibtex</a></div>
+
+<pre class="bib" style="display: none" xml:space="preserve">
+@article{Deng:neuro15,
+  author    = {Cheng Deng and Huiru Deng and Xianglong Liu and Yuan Yuan},
+  title     = {Adaptive multi-bit quantization for hashing},
+  journal   = {Neurocomputing},
+  volume    = {151},
+  pages     = {319--326},
+  year      = {2015},
+}</pre>
+	
+		</div>
+	</div>
+	
+
+	<div class="paper" id="Liu:icme11">
+		<div class="pimg"><img src="./image/icme2011.jpg"></div>
+		<div class="ptitle">Search by Mobile Image Based on Visual and Spatial Consistency</div>
+		<div class="pauthors">Xianglong Liu, Yihua Lou, Wei Yu, Bo Lang</div>
+		<div class="pvenue">IEEE ICME (<font color="#FF0000">Best Paper Candidate</font>, oral, 8%), 2011</div>
+		<div class="plinks">
+			<div class="plink"><a href="./icme2011.html">Project</a></div>
+			<div class="plink"><a href="./file/mvs_images.zip"><font color="#FF0000">Mobile Visual Search Database</font></a></div>		
+			
+			<div class="plink"><a class="togglebib" href="javascript:togglebib('Liu:icme11')" shape="rect">bibtex</a></div>
+
+<pre class="bib" style="display: none" xml:space="preserve">
+@inproceedings{Liu:icme11,
+  author    = {Xianglong Liu and Yihua Lou and Adams Wei Yu and Bo Lang},
+  title     = {Search by mobile image based on visual and spatial consistency},
+  booktitle = {IEEE International Conference on Multimedia
+               and Expo},
+  pages     = {1--6},
+  year      = {2011},
+}</pre> </div>
+
+		<div class="pvenue"><font color="#FF0000">Journal version</font>: Feature Grouping and Local Soft Match for Mobile Visual Search. PRL, 2012.</div>		
+		
+	</div>
+</div>
+
+->
+
+<div class="plinks">[<a href="http://sites.nlsde.buaa.edu.cn/~liwei">Wei Li</a>] | [<a href="www.ee.columbia.edu/~sfchang">Shih-Fu Chang</a>] | [<a href="https://www.uts.edu.au/staff/dacheng.tao">Dacheng Tao</a>] | [<a href="https://www.microsoft.com/en-us/research/people/jingdw/">Jingdong Wang</a>] | [<a href="cseweb.ucsd.edu/~haosu">Hao Su</a>] | [<a href="http://www.ee.columbia.edu/~jh2700/">Junfeng He</a>] | [<a href="http://www.muyadong.com/">Yadong Mu</a>]  | [<a href="http://see.xidian.edu.cn/faculty/chdeng/">Cheng Deng</a>] | [<a href="https://sites.google.com/site/elujiwen">Jiwen Lu</a>] | [<a href="http://sites.nlsde.buaa.edu.cn/~huanglei">Lei Huang</a>] | [<a href="www.cs.cmu.edu/~weiyu">Wei Yu</a>] | [<a href="http://scholar.google.com/citations?user=8VY7ZDcAAAAJ&hl=en">Google Scholar</a>] | [<a href="http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/l/Liu:Xianglong.html">DBLP</a>]
+</div>
+
+
+</P>	
+<hr/>
+
+<div id="counter">
+	<font face="Times New Roman">
+	Last Updated: 3/4/2021.
+	</font>
+
+	<br/>
+	<a href="http://info.flagcounter.com/Xorc"><img src="http://s07.flagcounter.com/count/Xorc/bg_FFFFFF/txt_000000/border_CCCCCC/columns_8/maxflags_12/viewers_3/labels_0/pageviews_1/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
+</div>
+
+</div>
+</body>   
+    
+</html>
