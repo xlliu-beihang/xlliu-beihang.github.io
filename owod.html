@@ -1,0 +1,205 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head> <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="Xianglong Liu">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="./bootstrap.min.css"><!--http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/-->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link href="./styles.css" rel="stylesheet">
+<title>Testing AI</title>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+
+<script>
+// Load this when the DOM is ready
+$(function(){
+  // You used .myCarousel here. 
+  // That's the class selector not the id selector,
+  // which is #myCarousel
+  $('#carousel-example-generic').carousel();
+});
+</script>
+
+</head>
+    
+<body> 
+<script xml:space="preserve"> 
+//<![CDATA[
+ function hideallbibs()
+{
+    var el = document.getElementsByTagName("div") ;
+    for (var i = 0 ; i < el.length ; ++i) {
+        if (el[i].className == "pub") {
+            var bib = el[i].getElementsByTagName("pre") ;
+            if (bib.length > 0) {
+                bib [0] .style.display = 'none' ;
+            }
+        }
+    }
+}
+ 
+function togglebib(paperid)
+{
+    var paper = document.getElementById(paperid) ;
+    var bib = paper.getElementsByTagName('pre') ;
+    if (bib.length > 0) {
+        if (bib [0] .style.display == 'none') {
+            bib [0] .style.display = 'block' ;
+        } else {
+            bib [0] .style.display = 'none' ;
+        }
+    }
+}
+//]]>
+</script>
+
+
+<div id="container">	
+
+<p>
+	<a href="#publications">X-ray </a> 
+</p>
+
+		
+<h3>Object Detection for X-ray Security Inspection<a name="publications"></a> </h3>		
+<div id="publications">
+  <div class="paper" id="Tao:CVPR22">
+		<div class="pimg"><img src="./image/shift.png"></div>
+		<div class="ptitle">Exploring Endogenous Shift for Cross-domain Detection: A Large-scale Benchmark and Perturbation Suppression Network</div>
+		<div class="pauthors">Renshuai Tao, Hainan Li, Tianbo Wang, Yanlu Wei, Yifu Ding, Bowei Jin, Hongping Zhi, Xianglong Liu*, Aishan Liu</div>
+		<div class="pvenue">IEEE CVPR, 2022</div>
+		<div class="plinks">
+			<div class="plink"><a href="https://arxiv.org/abs/2108.09917">PDF</a></div>	
+			<div class="plink"><a href="https://github.com/">Code</a></div>		
+<div class="plink"><a class="togglebib" href="javascript:togglebib('Tao:CVPR22')" shape="rect">bibtex</a></div>
+
+<pre class="bib" style="display: none" xml:space="preserve">
+@inproceedings{Tao:CVPR22,
+  author    = {Renshuai Tao and Hainan Li and Tianbo Wang and Yanlu Wei and Yifu Ding and Bowei Jin and, Hongping Zhi and Xianglong Liu and Aishan Liu},
+  title     = {Exploring Endogenous Shift for Cross-domain Detection: A Large-scale Benchmark and Perturbation Suppression Network},
+  booktitle = {IEEE CVPR},
+  year      = {2022},
+  } </pre>
+		</div>
+	</div>
+
+
+
+<div class="paper" id="Tao:arxiv22">
+		<div class="pimg"><img src="./image/osdoam.png"></div>
+		<div class="ptitle">Over-sampling De-occlusion Attention Network for Prohibited Items Detection in Noisy X-ray Images</div>
+		<div class="pauthors">Renshuai Tao, Yanlu Wei, Hainan Li, Aishan Liu, Yifu Ding, Haotong Qin, Xianglong Liu</div>
+		<div class="pvenue">ArXiv, 2022</div>
+		<div class="plinks">
+			<div class="plink"><a href="https://arxiv.org/abs/2103.00809">PDF</a></div>	
+			<div class="plink"><a href="https://github.com/HiXray-author/HiXray">Code</a></div>
+		</div>
+	</div>
+
+
+<div class="paper" id="Tao:ICCV21">
+		<div class="pimg"><img src="./image/xray.png"></div>
+		<div class="ptitle">Towards Real-world X-ray Security Inspection: A High-quality Benchmark and Lateral Inhibition Module for Prohibited Items Detection</div>
+		<div class="pauthors">Renshuai Tao, Yanlu Wei, Xiangjian Jiang, Hainan Li, Haotong Qin, Jiakai Wang, Yuqing Ma, Libo Zhang, Xianglong Liu*</div>
+		<div class="pvenue">IEEE ICCV, 2021</div>
+		<div class="plinks">
+			<div class="plink"><a href="https://openaccess.thecvf.com/content/ICCV2021/papers/Tao_Towards_Real-World_X-Ray_Security_Inspection_A_High-Quality_Benchmark_and_Lateral_ICCV_2021_paper.pdf">PDF</a></div>	
+			<div class="plink"><a href="https://github.com/HiXray-author/HiXray">Code</a></div>		
+<div class="plink"><a class="togglebib" href="javascript:togglebib('Tao:ICCV21')" shape="rect">bibtex</a></div>
+
+<pre class="bib" style="display: none" xml:space="preserve">
+@inproceedings{Tao:ICCV21,
+  author    = {Renshuai Tao and Yanlu Wei and Xiangjian Jiang and Hainan Li and Haotong Qin and Jiakai Wang and Yuqing Ma and Libo Zhang and Xianglong Liu},
+  title     = {Towards Real-world X-ray Security Inspection: A High-quality Benchmark and Lateral Inhibition Module for Prohibited Items Detection},
+  booktitle = {IEEE ICCV},
+  year      = {2021},
+  } </pre>
+		</div>
+	</div>
+
+
+<div class="paper" id="Zhang:ICCV21">
+		<div class="pimg"><img src="./image/PIDray.png"></div>
+		<div class="ptitle">Towards Real-World Prohibited Item Detection: A Large-Scale X-Ray Benchmark</div>
+		<div class="pauthors">Boying Wang, Libo Zhang, Longyin Wen, Xianglong Liu, Yanjun Wu</div>
+		<div class="pvenue">IEEE ICCV, 2021</div>
+		<div class="plinks">
+			<div class="plink"><a href="https://openaccess.thecvf.com/content/ICCV2021/papers/Wang_Towards_Real-World_Prohibited_Item_Detection_A_Large-Scale_X-Ray_Benchmark_ICCV_2021_paper.pdf">PDF</a></div>	
+			<div class="plink"><a href="https://github.com/">Code</a></div>
+		</div>
+	</div>
+
+
+
+<div class="paper" id="Wei:MM20">
+		<div class="pimg"><img src="./image/OPIXray.jpg"></div>
+		<div class="ptitle">Occluded Prohibited Items Detection: An X-ray Security Inspection Benchmark and De-occlusion Attention Module</div>
+		<div class="pauthors">Yanlu Wei, Renshuai Tao, Zhangjie Wu, Yuqing Ma, Libo Zhang, Xianglong Liu*</div>
+		<div class="pvenue">ACM Multimedia, 2020</div>
+		<div class="plinks">
+			<div class="plink"><a href="https://arxiv.org/abs/2004.08656">PDF</a></div>	
+			<div class="plink"><a href="https://github.com/OPIXray-author/OPIXray">Code</a></div>		
+<div class="plink"><a class="togglebib" href="javascript:togglebib('Wei:MM20')" shape="rect">bibtex</a></div>
+
+<pre class="bib" style="display: none" xml:space="preserve">
+@inproceedings{Wei:MM20,
+  author    = {Yanlu Wei and Renshuai Tao and Zhangjie Wu and Yuqing Ma and Libo Zhang and Xianglong Liu.},
+  title     = {Occluded Prohibited Items Detection: An X-ray Security Inspection Benchmark and De-occlusion Attention Module},
+  booktitle = {ACM Multimedia},
+  year      = {2020},
+  } </pre>
+		</div>
+	</div>
+
+</div>
+
+        	
+<h3>Open World Object Detection for Natural Images<a name="publications"></a> </h3>		
+<div id="publications">
+
+<div class="paper" id="Zhao:arxiv22">
+		<div class="pimg"><img src="./image/owod.png"></div>
+		<div class="ptitle">Revisiting Open World Object Detection</div>
+		<div class="pauthors">Xiaowei Zhao, Xianglong Liu, Yifan Shen, Yixuan Qiao, Yuqing Ma, Duorui Wang</div>
+		<div class="pvenue">Arxiv, 2022</div>
+		<div class="plinks">
+			<div class="plink"><a href="https://arxiv.org/pdf/2201.00471.pdf">PDF</a></div>	
+			<div class="plink"><a href="https://github.com/re-owod/re-owod">Code</a></div>
+		</div>
+	</div>
+
+ <div class="paper" id="Zhao:arxiv21">
+		<div class="pimg"><img src="./image/tesnet.png"></div>
+		<div class="ptitle">Temporal Speciation Network for Few-Shot Object Detection</div>
+		<div class="pauthors">Xiaowei Zhao, Xianglong Liu, Yuqing Ma, Shihao Bai, Yifan Shen, Zeyu Hao, Aishan Liu</div>
+		<div class="pvenue">Arxiv, 2022</div>
+		<div class="plinks">
+			<div class="plink"><a href="https://arxiv.org/pdf/2201.00471.pdf">PDF</a></div>	
+			<div class="plink"><a href="https://github.com/re-owod/re-owod">Code</a></div>
+		</div>
+	</div>
+
+    <div class="paper" id="Wei:ICCV19">
+		<div class="pimg"><img src="./image/unseen.png"></div>
+		<div class="ptitle">Adversarial Fine-Grained Composition Learning for Unseen Attribute-Object Recognition</div>
+		<div class="pauthors">Kun Wei, Muli Yang, Hao Wang, Cheng Deng*, Xianglong Liu*</div>
+		<div class="pvenue">IEEE ICCV, 2019</div>
+		<div class="plinks">
+			<div class="plink"><a href="https://arxiv.org/pdf/2201.00471.pdf">PDF</a></div>	
+			<div class="plink"><a href="https://github.com/re-owod/re-owod">Code</a></div>
+		</div>
+	</div>
+
+   
+</div>
+
+
+
+</div>
+
+</div>
+</body>   
+    
+</html>
