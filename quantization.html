@@ -1,0 +1,261 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- saved from url=(0041)https://xlliu-beihang.github.io/owod.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="Xianglong Liu">
+    <script src="./Network Quantization_files/jquery.min.js"></script>
+    <link rel="stylesheet" href="./Network Quantization_files/bootstrap.min.css"><!--http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/-->
+    <script src="./Network Quantization_files/bootstrap.min.js"></script>
+    <link href="./Network Quantization_files/styles.css" rel="stylesheet">
+<title>Network Quantization</title>
+
+
+<script>
+// Load this when the DOM is ready
+$(function(){
+  // You used .myCarousel here. 
+  // That's the class selector not the id selector,
+  // which is #myCarousel
+  $('#carousel-example-generic').carousel();
+});
+</script>
+
+</head>
+    
+<body> 
+<script xml:space="preserve"> 
+//<![CDATA[
+ function hideallbibs()
+{
+    var el = document.getElementsByTagName("div") ;
+    for (var i = 0 ; i < el.length ; ++i) {
+        if (el[i].className == "pub") {
+            var bib = el[i].getElementsByTagName("pre") ;
+            if (bib.length > 0) {
+                bib [0] .style.display = 'none' ;
+            }
+        }
+    }
+}
+ 
+function togglebib(paperid)
+{
+    var paper = document.getElementById(paperid) ;
+    var bib = paper.getElementsByTagName('pre') ;
+    if (bib.length > 0) {
+        if (bib [0] .style.display == 'none') {
+            bib [0] .style.display = 'block' ;
+        } else {
+            bib [0] .style.display = 'none' ;
+        }
+    }
+}
+//]]>
+</script>
+
+
+<div id="container">	
+	
+<p>
+	<a href="https://xlliu-beihang.github.io/quantization.html#bnn">Network Binarization</a> | <a href="https://xlliu-beihang.github.io/quantization.html#qnn">Network Quantization</a> 
+</p>
+
+<h3>Survey<a name="survey"></a> </h3>		
+<div id="publications">
+	<div class="paper" id="Qin:PR">
+		<div class="pimg"><img src="./Network Quantization_files/pr2020_survey.png"></div>
+		<div class="ptitle">Binary Neural Networks: A Survey</div>
+		<div class="pauthors">Haotong Qin, Ruihao Gong, Xianglong Liu*, Xiao Bai, Jingkuan Song, Nicu Sebe</div>
+		<div class="pvenue">Pattern Recognition (PR), 2020</div>
+		<div class="plinks">
+			<div class="plink"><a href="https://arxiv.org/abs/2004.03333">PDF</a></div>	
+			<div class="plink"><a href="https://github.com/htqin/awesome-model-quantization">Code: Awesome Model Quantization</a></div>		
+<div class="plink"><a class="togglebib" href="javascript:togglebib(&#39;Qin:IJCAI22&#39;)" shape="rect">bibtex</a></div>
+
+<pre class="bib" style="display: none" xml:space="preserve">@article{Qin:PR20,
+  author    = {Haotong Qin and Ruihao Gong and Xianglong Liu and Xiao Bai and Jingkuan Song and Nicu Sebe},
+  title     = {Binary Neural Networks: A Survey},
+  booktitle = {Pattern Recognition},
+  year      = {2020},
+  } </pre>
+		</div>
+	</div>
+</div>
+		
+<h3>Network Binarization<a name="bnn"></a> </h3>		
+<div id="publications">
+
+	<div class="paper" id="Qin:IJCAI22">
+		<div class="pimg"><img src="./Network Quantization_files/bifsmn.jpg"></div>
+		<div class="ptitle">BiFSMN: Binary Neural Network for Keyword Spotting</div>
+		<div class="pauthors">Haotong Qin, Xudong Ma, Yifu Ding, Xiaoyang Li, Yang Zhang, Yao Tian, Zejun Ma, Jie Luo, Xianglong Liu*</div>
+		<div class="pvenue">IJCAI, 2022</div>
+		<div class="plinks">
+			<div class="plink"><a href="https://xlliu-beihang.github.io/">PDF</a></div>	
+			<div class="plink"><a href="https://github.com/">Code</a></div>		
+<div class="plink"><a class="togglebib" href="javascript:togglebib(&#39;Qin:IJCAI22&#39;)" shape="rect">bibtex</a></div>
+
+<pre class="bib" style="display: none" xml:space="preserve">@inproceedings{Qin:IJCAI22,
+  author    = {Haotong Qin and Xudong Ma and Yifu Ding and Xiaoyang Li and Yang Zhang and Yao Tian and Zejun Ma and Jie Luo and Xianglong Liu},
+  title     = {BiFSMN: Binary Neural Network for Keyword Spotting},
+  booktitle = {IJCAI},
+  year      = {2022},
+  } </pre>
+		</div>
+	</div>
+
+
+	<div class="paper" id="Qin:ICLR22">
+		<div class="pimg"><img src="./Network Quantization_files/bibert.png"></div>
+		<div class="ptitle">BiBERT: Accurate Fully Binarized BERT</div>
+		<div class="pauthors">Haotong Qin, Yifu Ding, Mingyuan Zhang, Qinghua Yan, Aishan Liu, Qingqing Dang, Ziwei Liu, Xianglong Liu*</div>
+		<div class="pvenue">ICLR, 2022</div>
+		<div class="plinks">
+			<div class="plink"><a href="https://openreview.net/forum?id=5xEgrl_5FAJ">PDF</a></div>	
+			<div class="plink"><a href="https://github.com/htqin/BiBERT/">Code</a></div>		
+<div class="plink"><a class="togglebib" href="javascript:togglebib(&#39;Qin:ICLR22&#39;)" shape="rect">bibtex</a></div>
+
+<pre class="bib" style="display: none" xml:space="preserve">@inproceedings{Qin:ICLR22,
+  author    = {Haotong Qin and Yifu Ding and Mingyuan Zhang and Qinghua Yan and Aishan Liu and Qingqing Dang and Ziwei Liu and Xianglong Liu*},
+  title     = {BiBERT: Accurate Fully Binarized BERT},
+  booktitle = {ICLR},
+  year      = {2022},
+  } </pre>
+		</div>
+	</div>
+
+
+	<div class="paper" id="Qin:iclr21">
+		<div class="pimg"><img src="./Network Quantization_files/bipointnet.png"></div>
+		<div class="ptitle">BiPointNet: Binary Neural Network for Point Clouds</div>
+		<div class="pauthors">Haotong Qin, Zhongang Cai, Mingyuan Zhang, Yifu Ding, Haiyu Zhao, Shuai Yi, Xianglong Liu*, Hao Su</div>
+		<div class="pvenue">ICLR, 2021</div>
+		<div class="plinks">
+			<div class="plink"><a href="https://openreview.net/forum?id=9QLRCVysdlO">PDF</a></div>	
+			<div class="plink"><a href="https://github.com/htqin/BiPointNet">Code</a></div>		
+<div class="plink"><a class="togglebib" href="javascript:togglebib(&#39;Qin:iclr21&#39;)" shape="rect">bibtex</a></div>
+
+<pre class="bib" style="display: none" xml:space="preserve">@inproceedings{Qin:iclr21,
+  author    = {Haotong Qin and Zhongang Cai and Mingyuan Zhang and Yifu Ding and Haiyu Zhao and Shuai Yi and Xianglong Liu* and Hao Su},
+  title     = {BiPointNet: Binary Neural Network for Point Clouds},
+  booktitle = {ICLR},
+  year      = {2021},
+  } </pre>
+		</div>
+	</div>
+
+
+
+	<div class="paper" id="Qin:cvpr20">
+		<div class="pimg"><img src="./Network Quantization_files/IRNet.png"></div>
+		<div class="ptitle">Forward and Backward Information Retention for Accurate Binary Neural Networks</div>
+		<div class="pauthors">Haotong Qin, Ruihao Gong, Xianglong Liu*, Mingzhu Shen, Ziran Wei, Fengwei Yu, Jingkuan Song</div>
+		<div class="pvenue">IEEE CVPR, 2020</div>
+		<div class="plinks">
+			<div class="plink"><a href="https://xlliu-beihang.github.io/file/cvpr20_irnet.pdf">PDF</a></div>
+			<div class="plink"><a href="https://github.com/htqin/IR-Net">Code</a></div>
+<div class="plink"><a class="togglebib" href="javascript:togglebib(&#39;Qin:cvpr20&#39;)" shape="rect">bibtex</a></div>
+
+<pre class="bib" style="display: none" xml:space="preserve">@inproceedings{Qin:cvpr20,
+  author    = {Haotong Qin and Ruihao Gong and Xianglong Liu and Mingzhu Shen and Ziran Wei and Fengwei Yu and Jingkuan Song},
+  title     = {Forward and Backward Information Retention for Accurate Binary Neural Networks},
+  booktitle = {IEEE CVPR},
+  year      = {2020},
+  } </pre>
+		</div>
+	</div>
+
+</div>
+
+        	
+<h3>Network Quantization<a name="qnn"></a> </h3>		
+<div id="publications">
+
+	<div class="paper" id="Wei:ICLR22">
+		<div class="pimg"><img src="./Network Quantization_files/qdrop.png"></div>
+		<div class="ptitle">QDrop: Randomly Dropping Quantization for Extremely Low-bit Post-Training Quantization</div>
+		<div class="pauthors">Xiuying Wei, Ruihao Gong, Yuhang Li, Xianglong Liu*, Fengwei Yu</div>
+		<div class="pvenue">ICLR, 2022</div>
+		<div class="plinks">
+			<div class="plink"><a href="https://openreview.net/forum?id=ySQH0oDyp7">PDF</a></div>	
+			<div class="plink"><a href="https://github.com/wimh966/QDrop">Code</a></div>		
+<div class="plink"><a class="togglebib" href="javascript:togglebib(&#39;Wei:ICLR22&#39;)" shape="rect">bibtex</a></div>
+
+<pre class="bib" style="display: none" xml:space="preserve">@inproceedings{Wei:ICLR22,
+  author    = {Xiuying Wei and Ruihao Gong and Yuhang Li and Xianglong Liu and Fengwei Yu},
+  title     = {QDrop: Randomly Dropping Quantization for Extremely Low-bit Post-Training Quantization},
+  booktitle = {ICLR},
+  year      = {2022},
+  } </pre>
+		</div>
+	</div>
+
+	<div class="paper" id="Zhang:cvpr21">
+		<div class="pimg"><img src="./Network Quantization_files/dsg.png"></div>
+		<div class="ptitle">Diversifying Sample Generation for Accurate Data-Free Quantization</div>
+		<div class="pauthors">Xiangguo Zhang, Haotong Qin, Yifu Ding, Ruihao Gong, Qinghua Yan, Renshuai Tao, Yuhang Li, Fengwei Yu, Xianglong Liu*</div>
+		<div class="pvenue">IEEE CVPR (oral), 2021</div>
+		<div class="plinks">
+			<div class="plink"><a href="https:">PDF</a></div>	
+			<div class="plink"><a href="https://github.com/">Code</a></div>		
+<div class="plink"><a class="togglebib" href="javascript:togglebib(&#39;Zhang:cvpr21&#39;)" shape="rect">bibtex</a></div>
+
+<pre class="bib" style="display: none" xml:space="preserve">@inproceedings{Zhang:cvpr21,
+  author    = {Xiangguo Zhang and Haotong Qin and Yifu Ding and Ruihao Gong and Qinghua Yan and Renshuai Tao and Yuhang Li and Fengwei Yu and Xianglong Liu},
+  title     = {Diversifying Sample Generation for Accurate Data-Free Quantization},
+  booktitle = {IEEE CVPR},
+  year      = {2021},
+  } </pre>
+		</div>
+	</div>
+
+    <div class="paper" id="Zhu:cvpr20">
+		<div class="pimg"><img src="./Network Quantization_files/INT8.png"></div>
+		<div class="ptitle">Towards Unified INT8 Training for Convolutional Neural Network</div>
+		<div class="pauthors">Feng Zhu, Ruihao Gong, Fengwei Yu, Xianglong Liu*, Yanfei Wang, Zhelong Li, Xiuqi Yang, Junjie Yan</div>
+		<div class="pvenue">IEEE CVPR, 2020</div>
+		<div class="plinks">
+			<div class="plink"><a href="https://xlliu-beihang.github.io/file/cvpr20_int8.pdf">PDF</a></div>
+			<div class="plink"><a href="https://xlliu-beihang.github.io/file/cvpr20_int8_supp.pdf">Supplementary</a></div>
+<div class="plink"><a class="togglebib" href="javascript:togglebib(&#39;Zhu:cvpr20&#39;)" shape="rect">bibtex</a></div>
+
+<pre class="bib" style="display: none" xml:space="preserve">@inproceedings{Zhu:cvpr20,
+  author    = {Feng Zhu and Ruihao Gong and Fengwei Yu and Xianglong Liu and Yanfei Wang and Zhelong Li and Xiuqi Yang and Junjie Yan},
+  title     = {Towards Unified INT8 Training for Convolutional Neural Network},
+  booktitle = {IEEE CVPR},
+  year      = {2020},
+  } </pre>
+		</div>
+	</div>
+
+	<div class="paper" id="Gong:iccv19">
+		<div class="pimg"><img src="./Network Quantization_files/dsq.png"></div>
+		<div class="ptitle">Differentiable Soft Quantization: Bridging Full-Precision and Low-Bit Neural Networks</div>
+		<div class="pauthors">Ruihao Gong, Xianglong Liu*, Shenghu Jiang, Tianxiang Li, Peng Hu, Jiazhen Lin, Fengwei Yu, Junjie Yan</div>
+		<div class="pvenue">IEEE ICCV, 2019</div>
+		<div class="plinks">
+			<div class="plink"><a href="https://xlliu-beihang.github.io/file/iccv19.pdf">PDF</a></div>
+			<div class="plink"><a href="https://xlliu-beihang.github.io/file/iccv19_supp.pdf">Supplementary</a></div>
+<div class="plink"><a class="togglebib" href="javascript:togglebib(&#39;Gong:iccv19&#39;)" shape="rect">bibtex</a></div>
+
+<pre class="bib" style="display: none" xml:space="preserve">@inproceedings{Gong:iccv19,
+  author    = {Ruihao Gong and Xianglong Liu and  Shenghu Jiang and Tianxiang Li and Peng Hu and Jiazhen Lin and Fengwei Yu and Junjie Yan},
+  title     = {Differentiable Soft Quantization: Bridging Full-Precision and Low-Bit Neural Networks},
+  booktitle = {IEEE ICCV},
+  year      = {2019},
+  } </pre>
+		</div>
+	</div>
+   
+</div>
+
+
+
+</div>
+
+
+   
+    
+
+</body></html>
